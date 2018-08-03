@@ -1,0 +1,10 @@
+*.pyc
+*.sqlite3
+scrumbot/local_settings.py
+*.DS_Store
+
+*__pycache__
+static/
+media/
+assets/fe/node_modules/
+assets/fe/dist/
