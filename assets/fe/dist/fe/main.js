@@ -574,14 +574,16 @@ module.exports = "<div class=\"container-fluid\">\n    <div class=\"row border-b
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScrumboardComponent", function() { return ScrumboardComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var app_services_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! app/services/data.service */ "./src/app/services/data.service.ts");
-/* harmony import */ var app_services_filter_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/services/filter.service */ "./src/app/services/filter.service.ts");
-/* harmony import */ var app_services_search_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! app/services/search.service */ "./src/app/services/search.service.ts");
-/* harmony import */ var app_services_authentication_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! app/services/authentication.service */ "./src/app/services/authentication.service.ts");
-/* harmony import */ var _uirouter_angular__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @uirouter/angular */ "./node_modules/@uirouter/angular/lib/index.js");
-/* harmony import */ var app_constants_endpoints__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! app/constants/endpoints */ "./src/app/constants/endpoints.ts");
+/* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! underscore */ "./node_modules/underscore/underscore.js");
+/* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(underscore__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var app_services_data_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/services/data.service */ "./src/app/services/data.service.ts");
+/* harmony import */ var app_services_filter_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! app/services/filter.service */ "./src/app/services/filter.service.ts");
+/* harmony import */ var app_services_search_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! app/services/search.service */ "./src/app/services/search.service.ts");
+/* harmony import */ var app_services_authentication_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! app/services/authentication.service */ "./src/app/services/authentication.service.ts");
+/* harmony import */ var _uirouter_angular__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @uirouter/angular */ "./node_modules/@uirouter/angular/lib/index.js");
+/* harmony import */ var app_constants_endpoints__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! app/constants/endpoints */ "./src/app/constants/endpoints.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -591,6 +593,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -666,6 +669,8 @@ var ScrumboardComponent = /** @class */ (function () {
         this.dataService.fetchScrums()
             .subscribe(function (data) {
             _this.scrums_bydate = data;
+            var scrums = underscore__WEBPACK_IMPORTED_MODULE_0__["map"](_this.scrums_bydate, function (scrum) { return scrum.scrums; });
+            console.log(underscore__WEBPACK_IMPORTED_MODULE_0__["uniq"](scrums, true, 'date_created'));
             // this.scrums.map(date_group => {
             //   date_group.scrums.map(scrum => {
             //     scrum.issue_logs.map(issue => {
@@ -720,7 +725,7 @@ var ScrumboardComponent = /** @class */ (function () {
             })];
     };
     ScrumboardComponent.prototype.updateStatus = function (id, status) {
-        this.http.post(Object(app_constants_endpoints__WEBPACK_IMPORTED_MODULE_7__["UPDATE_ISSUE_STATUS"])(id), { "status": status })
+        this.http.post(Object(app_constants_endpoints__WEBPACK_IMPORTED_MODULE_8__["UPDATE_ISSUE_STATUS"])(id), { "status": status })
             .subscribe();
         var index = this.issues.findIndex(function (issue) {
             return issue.id == id;
@@ -745,7 +750,7 @@ var ScrumboardComponent = /** @class */ (function () {
     };
     ScrumboardComponent.prototype.updateDeadline = function (id, deadline) {
         if (deadline) {
-            this.http.post(Object(app_constants_endpoints__WEBPACK_IMPORTED_MODULE_7__["UPDATE_ISSUE_DEADLINE"])(id), { "deadline": deadline })
+            this.http.post(Object(app_constants_endpoints__WEBPACK_IMPORTED_MODULE_8__["UPDATE_ISSUE_DEADLINE"])(id), { "deadline": deadline })
                 .subscribe();
         }
     };
@@ -784,17 +789,17 @@ var ScrumboardComponent = /** @class */ (function () {
         this.stateService.go('issuesboard');
     };
     ScrumboardComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-scrumboard',
             template: __webpack_require__(/*! ./scrumboard.component.html */ "./src/app/components/containers/scrumboard/scrumboard.component.html"),
             styles: [__webpack_require__(/*! ./scrumboard.component.css */ "./src/app/components/containers/scrumboard/scrumboard.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"],
-            app_services_filter_service__WEBPACK_IMPORTED_MODULE_3__["FilterService"],
-            app_services_search_service__WEBPACK_IMPORTED_MODULE_4__["SearchService"],
-            app_services_data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"],
-            _uirouter_angular__WEBPACK_IMPORTED_MODULE_6__["StateService"],
-            app_services_authentication_service__WEBPACK_IMPORTED_MODULE_5__["AuthenticationService"]])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"],
+            app_services_filter_service__WEBPACK_IMPORTED_MODULE_4__["FilterService"],
+            app_services_search_service__WEBPACK_IMPORTED_MODULE_5__["SearchService"],
+            app_services_data_service__WEBPACK_IMPORTED_MODULE_3__["DataService"],
+            _uirouter_angular__WEBPACK_IMPORTED_MODULE_7__["StateService"],
+            app_services_authentication_service__WEBPACK_IMPORTED_MODULE_6__["AuthenticationService"]])
     ], ScrumboardComponent);
     return ScrumboardComponent;
 }());
