@@ -31,9 +31,9 @@ class ScrumAPI(ViewSet, CRUDMixin, ParseMixin):
         """
         adds scrum reports to db
         """
+        return Response(data="hmmmmm")
         data = self.parseData(request.POST)
 
-        return Response(data="hmmmmm")
         if(data['channel_name']=='privategroup'):
             slack_url = 'https://slack.com/api/groups.info?token='
             slack_params = settings.SLACK_API_TOKEN+'&channel='+data['channel_id']
