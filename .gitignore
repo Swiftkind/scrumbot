@@ -8,4 +8,4 @@ static/
 media/
 dist/
 assets/fe/node_modules/
-assets/fe/dist/
+#assets/fe/dist/
