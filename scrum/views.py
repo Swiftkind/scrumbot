@@ -33,12 +33,12 @@ class ScrumAPI(ViewSet, CRUDMixin, ParseMixin):
         """
         data = self.parseData(request.POST)
 
+        return Response(data=slack_url+slack_params)
         if(data['channel_name']=='privategroup'):
             slack_url = 'https://slack.com/api/groups.info?token='
             slack_params = settings.SLACK_API_TOKEN+'&channel='+data['channel_id']
             slack_data = requests.get(slack_url+slack_params)
             slack_json = slack_data.json()
-            return Response(data=slack_url+slack_params)
             data['channel_name'] = slack_json['group']['name_normalized']
 
         try:
