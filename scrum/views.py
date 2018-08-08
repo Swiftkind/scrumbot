@@ -38,6 +38,7 @@ class ScrumAPI(ViewSet, CRUDMixin, ParseMixin):
             slack_params = settings.SLACK_API_TOKEN+'&channel='+data['channel_id']
             slack_data = requests.get(slack_url+slack_params)
             slack_json = slack_data.json()
+            return Response(data=slack_url+slack_params)
             data['channel_name'] = slack_json['group']['name_normalized']
 
         try:
