@@ -105,18 +105,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ngx_bootstrap_timepicker__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngx-bootstrap/timepicker */ "./node_modules/ngx-bootstrap/timepicker/index.js");
 /* harmony import */ var _ncstate_sat_popover__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ncstate/sat-popover */ "./node_modules/@ncstate/sat-popover/fesm5/ncstate-sat-popover.js");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var app_app_states__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! app/app.states */ "./src/app/app.states.ts");
-/* harmony import */ var app_app_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! app/app.component */ "./src/app/app.component.ts");
-/* harmony import */ var app_components_forms_create_team_create_team_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! app/components/forms/create-team/create-team.component */ "./src/app/components/forms/create-team/create-team.component.ts");
-/* harmony import */ var app_components_prompts_join_team_join_team_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! app/components/prompts/join-team/join-team.component */ "./src/app/components/prompts/join-team/join-team.component.ts");
-/* harmony import */ var app_components_prompts_slack_login_slack_login_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! app/components/prompts/slack-login/slack-login.component */ "./src/app/components/prompts/slack-login/slack-login.component.ts");
-/* harmony import */ var app_components_containers_scrumboard_scrumboard_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! app/components/containers/scrumboard/scrumboard.component */ "./src/app/components/containers/scrumboard/scrumboard.component.ts");
-/* harmony import */ var app_components_avatar_avatar_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! app/components/avatar/avatar.component */ "./src/app/components/avatar/avatar.component.ts");
-/* harmony import */ var app_components_containers_issueboard_issueboard_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! app/components/containers/issueboard/issueboard.component */ "./src/app/components/containers/issueboard/issueboard.component.ts");
-/* harmony import */ var app_components_header_header_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! app/components/header/header.component */ "./src/app/components/header/header.component.ts");
-/* harmony import */ var app_components_marker_marker_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! app/components/marker/marker.component */ "./src/app/components/marker/marker.component.ts");
-/* harmony import */ var _pipes_groupby_date_pipe__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pipes/groupby-date.pipe */ "./src/app/pipes/groupby-date.pipe.ts");
-/* harmony import */ var _components_forms_login_login_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/forms/login/login.component */ "./src/app/components/forms/login/login.component.ts");
+/* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ "./node_modules/@fortawesome/angular-fontawesome/fesm5/angular-fontawesome.js");
+/* harmony import */ var app_app_states__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! app/app.states */ "./src/app/app.states.ts");
+/* harmony import */ var app_app_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! app/app.component */ "./src/app/app.component.ts");
+/* harmony import */ var app_components_containers_scrumboard_scrumboard_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! app/components/containers/scrumboard/scrumboard.component */ "./src/app/components/containers/scrumboard/scrumboard.component.ts");
+/* harmony import */ var app_components_avatar_avatar_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! app/components/avatar/avatar.component */ "./src/app/components/avatar/avatar.component.ts");
+/* harmony import */ var app_components_containers_issueboard_issueboard_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! app/components/containers/issueboard/issueboard.component */ "./src/app/components/containers/issueboard/issueboard.component.ts");
+/* harmony import */ var app_components_header_header_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! app/components/header/header.component */ "./src/app/components/header/header.component.ts");
+/* harmony import */ var app_components_marker_marker_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! app/components/marker/marker.component */ "./src/app/components/marker/marker.component.ts");
+/* harmony import */ var app_components_forms_login_login_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! app/components/forms/login/login.component */ "./src/app/components/forms/login/login.component.ts");
+/* harmony import */ var _pipes_group_scrums_pipe__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pipes/group-scrums.pipe */ "./src/app/pipes/group-scrums.pipe.ts");
+/* harmony import */ var _pipes_group_issues_pipe__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pipes/group-issues.pipe */ "./src/app/pipes/group-issues.pipe.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -138,9 +137,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 // IMPORTED FROM PROJECT
-
-
 
 
 
@@ -157,22 +155,21 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                app_app_component__WEBPACK_IMPORTED_MODULE_14__["AppComponent"],
-                app_components_prompts_join_team_join_team_component__WEBPACK_IMPORTED_MODULE_16__["JoinTeamComponent"],
-                app_components_forms_create_team_create_team_component__WEBPACK_IMPORTED_MODULE_15__["CreateTeamComponent"],
-                app_components_prompts_slack_login_slack_login_component__WEBPACK_IMPORTED_MODULE_17__["SlackLoginComponent"],
-                app_components_containers_scrumboard_scrumboard_component__WEBPACK_IMPORTED_MODULE_18__["ScrumboardComponent"],
-                app_components_avatar_avatar_component__WEBPACK_IMPORTED_MODULE_19__["AvatarComponent"],
-                app_components_containers_issueboard_issueboard_component__WEBPACK_IMPORTED_MODULE_20__["IssueboardComponent"],
-                app_components_header_header_component__WEBPACK_IMPORTED_MODULE_21__["HeaderComponent"],
-                app_components_marker_marker_component__WEBPACK_IMPORTED_MODULE_22__["MarkerComponent"],
-                _pipes_groupby_date_pipe__WEBPACK_IMPORTED_MODULE_23__["GroupbyDatePipe"],
-                _components_forms_login_login_component__WEBPACK_IMPORTED_MODULE_24__["LoginComponent"],
+                app_app_component__WEBPACK_IMPORTED_MODULE_15__["AppComponent"],
+                app_components_containers_scrumboard_scrumboard_component__WEBPACK_IMPORTED_MODULE_16__["ScrumboardComponent"],
+                app_components_avatar_avatar_component__WEBPACK_IMPORTED_MODULE_17__["AvatarComponent"],
+                app_components_containers_issueboard_issueboard_component__WEBPACK_IMPORTED_MODULE_18__["IssueboardComponent"],
+                app_components_header_header_component__WEBPACK_IMPORTED_MODULE_19__["HeaderComponent"],
+                app_components_marker_marker_component__WEBPACK_IMPORTED_MODULE_20__["MarkerComponent"],
+                app_components_forms_login_login_component__WEBPACK_IMPORTED_MODULE_21__["LoginComponent"],
+                _pipes_group_scrums_pipe__WEBPACK_IMPORTED_MODULE_22__["GroupScrumsPipe"],
+                _pipes_group_issues_pipe__WEBPACK_IMPORTED_MODULE_23__["GroupIssuesPipe"],
             ],
             imports: [
                 _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_7__["NgbModule"].forRoot(),
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
+                _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__["BrowserAnimationsModule"],
                 _ncstate_sat_popover__WEBPACK_IMPORTED_MODULE_11__["SatPopoverModule"],
                 ngx_bootstrap_collapse__WEBPACK_IMPORTED_MODULE_8__["CollapseModule"].forRoot(),
@@ -182,13 +179,13 @@ var AppModule = /** @class */ (function () {
                     cookieName: 'csrftoken',
                     headerName: 'X-CSRFToken',
                 }),
-                _uirouter_angular__WEBPACK_IMPORTED_MODULE_5__["UIRouterModule"].forRoot(app_app_states__WEBPACK_IMPORTED_MODULE_13__["APP_STATES"]),
+                _uirouter_angular__WEBPACK_IMPORTED_MODULE_5__["UIRouterModule"].forRoot(app_app_states__WEBPACK_IMPORTED_MODULE_14__["APP_STATES"]),
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
                 angular_6_datatable__WEBPACK_IMPORTED_MODULE_4__["DataTableModule"],
                 ngx_mydatepicker__WEBPACK_IMPORTED_MODULE_6__["NgxMyDatePickerModule"].forRoot(),
             ],
             providers: [],
-            bootstrap: [app_app_component__WEBPACK_IMPORTED_MODULE_14__["AppComponent"]]
+            bootstrap: [app_app_component__WEBPACK_IMPORTED_MODULE_15__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -216,20 +213,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// let CREATE_TEAM_STATE: Object[] = [
-//     {
-//         name: 'create-team',
-//         url: '/create',
-//         views: ContentOnly(CreateTeamComponent),
-//     }
-// ]
-// let JOIN_TEAM_STATE: Object[] = [
-//     {
-//         name: 'join-team',
-//         url: '/join',
-//         views: ContentOnly(JoinTeamComponent),
-//     }
-// ]
 var HOME_STATE = [
     {
         name: 'scrumboard',
@@ -252,11 +235,7 @@ var LOGIN_STATE = [
     }
 ];
 var APP_STATES = {
-    otherwise: '/',
-    states: [].concat(
-    // CREATE_TEAM_STATE,
-    //       JOIN_TEAM_STATE,
-    HOME_STATE, ISSUES_STATE, LOGIN_STATE)
+    states: [].concat(HOME_STATE, ISSUES_STATE, LOGIN_STATE)
 };
 
 
@@ -269,7 +248,7 @@ var APP_STATES = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".avatar{\n    color: white\n}\n.dot {\n        height: 42px;\n        width: 42px;\n        background-color: blue;\n    }"
+module.exports = ""
 
 /***/ }),
 
@@ -365,7 +344,7 @@ var AvatarComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n    <div class=\"row border-bottom d-flex justify-content-between\">\n        <div class=\"m-3 ml-5 pl-5 d-flex align-items-center w-50\">\n            <div class=\"tabs clickable\">\n                <span class=\"less-emphasis\" (click)=\"goToDashboard()\"><b>Dashboard</b></span>\n            </div>\n            <div class=\"tabs clickable\">\n                <span class=\"less-emphasis\"><b>All Issues</b></span>\n            </div>\n            <i class=\"less-emphasis fas fa-search border-0 m-1 mr-3 ml-5 pl-5\"></i>\n            <input type=\"text\" placeholder=\"Search\" class=\"border-0 less-emphasis searchbar\" (input)=\"getScrum(search.value)\" #search>\n        </div>\n        <div class=\"m-3 mr-5\">\n            <app-avatar></app-avatar>\n        </div>\n    </div>\n    <div class=\"row issues_container\">\n        <div class=\"col p-5 mt-2 ml-5\">\n            <div class=\"row\">\n                <div class=\"d-flex align-items-center summary_box flex-fill\">\n                    <div class=\"marker_static\">\n                    </div>\n                    <div>\n                        <p class=\"less-emphasis mb-0 ml-2 title\">You have 13 unresolve issues</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row pt-4 pb-4 justify-content-between\">\n                <div class=\"col d-flex flex-column\">\n                    <div class=\"d-flex flex-row align-items-center\">\n                        <span class=\"w-25 less-emphasis\">Select Project</span>\n                        <div class=\"input-group w-50\">\n                          <select class=\"custom-select less-emphasis\" (change)=\"filter_project=select_project.value\" #select_project>\n                            <option selected value=\"\">All Projects</option>\n                            <option *ngFor=\"let project of projects\">{{ project.name }}</option>\n                          </select>\n                        </div>\n                    </div>\n                    <br>\n                    <div class=\"d-flex flex-row align-items-center\">\n                        <span class=\"w-25 less-emphasis\">Members</span>\n                        <div class=\"input-group w-50\">\n                          <select class=\"custom-select less-emphasis\" (change)=\"filter_user=select_user.value\" #select_user>\n                            <option selected value=\"\">All Members</option>\n                            <option *ngFor=\"let user of users\">{{ user.username }}</option>\n                          </select>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col d-flex flex-column\">\n                    <div class=\"d-flex flex-row-reverse align-items-center\">\n                            <div class=\"w-25 input-group date_filters\">\n                                <input class=\"form-control datepicker less-emphasis\" ngx-mydatepicker name=\"to\" [(ngModel)]=\"to_model\" [options]=\"toOptions\" #to_dp=\"ngx-mydatepicker\" (dateChanged)=\"setDateToFilter($event)\"/>\n                                <span class=\"input-group-append\">\n                                    <button type=\"button\" class=\"btn btn-light less-emphasis grey-border\" (click)=\"to_dp.toggleCalendar()\">\n                                        <i class=\"far fa-calendar\"></i>\n                                    </button>\n                                </span>\n                            </div>\n                            <h3 class=\"m-0 mr-2 ml-2\">-</h3>\n                            <div class=\"w-25 input-group date_filters\">\n                                <input class=\"form-control datepicker less-emphasis\" ngx-mydatepicker name=\"from\" [(ngModel)]=\"from_model\" [options]=\"fromOptions\" #from_dp=\"ngx-mydatepicker\" (dateChanged)=\"setDateFromFilter($event)\"/>\n                                <span class=\"input-group-append\">\n                                    <button type=\"button\" class=\"btn btn-light  less-emphasis grey-border\" (click)=\"from_dp.toggleCalendar()\">\n                                        <i class=\"far fa-calendar\"></i>\n                                    </button>\n                                </span>\n                            </div>\n                        <span class=\"less-emphasis mr-4\">Date</span>\n                            <!-- <div class=\"input-group\">\n                                <div class=\"input-group-prepend\">\n                                    <div class=\"p-2 d-flex align-items-center border rounded-left\">\n                                        <i class=\"far fa-calendar\"></i>\n                                    </div>\n                                </div>\n                                <input type=\"text\" ngbDatepicker class=\"border border-left-0 form-control\" #d=\"ngbDatepicker\"/>\n                                <div class=\"input-group-append\">\n                                    <button class=\"btn btn-light border border-left-0\" (click)=\"d.toggle()\"><i class=\"fas fa-chevron-down\"></i></button>\n                                </div>\n                            </div> -->\n                    </div>\n                    <br>\n                    <div class=\"d-flex flex-row-reverse align-items-center\">\n                        <div class=\"input-group w-50\">\n                          <select class=\"custom-select less-emphasis\" (change)=\"filter_status=select_status.value\" #select_status>\n                            <option selected value=\"\">All</option>\n                            <option value=\"P\">Pending</option>\n                            <option value=\"R\">Resolved</option>\n                            <option value=\"C\">Closed</option>\n                          </select>\n                        </div>\n                        <span class=\"mr-5 less-emphasis\">Status</span>\n                    </div>\n                </div>\n            </div>\n            <!-- <div class=\"row\" *ngIf=\"filter_user && filter_hours\">\n                <div>\n                    <h2 class=\"p-3 m-0\">{{ filter_user }} has logged a total of {{ getTotalHours(filter_user, filter_project, filter_from, filter_to) }} hours <span *ngIf=\"filter_project\">in project {{ filter_project }}</span> from {{ filter_from | date:'longDate' }} to {{ filter_to | date:'longDate' }}</h2>\n                </div>\n            </div> -->\n            <div class=\"row pt-4\">\n                <div class=\"col-sm-3\">\n                    <h4><b>Issues list</b></h4>\n                </div>\n            </div>\n            <div class=\"row mt-3 \">\n                <div class=\"col-4 d-flex justify-content-end pr-5\">\n                    <span class=\"category_label\"><b>Project Channel</b></span>\n                </div>\n                <div class=\"col-2\"></div>\n                <div class=\"col\">\n                    <span class=\"category_label\"><b>Issues</b></span>\n                </div>\n                <div class=\"col d-flex justify-content-end mr-5\">\n                    <span class=\"category_label pr-5\"><b>Due Date</b></span>\n                </div>\n            </div>\n            <div class=\"row mb-3\">\n                <div class=\"col-sm-2 d-flex\">\n                    <span class=\"align-self-center grey-border less-emphasis\">Today - {{ today | date:'longDate'}}</span>\n                </div>\n                <div class=\"col-sm-10\">\n                    <hr>\n                </div>\n            </div>\n            <div class=\"d-flex flex-column m-1 scrumlist\">\n                <div class=\"mt-1 mb-1 scrumitem\" *ngFor=\"let issue of issues\">\n                    <div *ngIf=\"(filter_user=='' || issue.scrum_data.user_username==filter_user) && (filter_project=='' || issue.scrum_data.project_name==filter_project) && (filter_status=='' || issue.status==filter_status) && isWithinDate(issue.scrum_data.date_created, filter_from, filter_to)\" class=\"d-flex align-items-center\">\n                        <app-marker [project]=\"issue.scrum_data.project_name\"></app-marker>\n                        <div class=\"d-flex flex-fill\" >\n                            <div class=\"col-2 d-flex mr-4\">\n                                <div>\n                                    <app-avatar [username]=\"issue.scrum_data.user_username\" [id]=\"issue.scrum_data.user_username\"></app-avatar>\n                                </div>\n                                <div class=\"ml-3\">\n                                    <span><b>{{ issue.scrum_data.user_username }}</b></span>\n                                    <br>\n                                    <span class=\"less-emphasis category_label\">{{ issue.scrum_data.date_created | date:'shortTime'}} <span *ngIf=\"issue.scrum_data.is_edited\">(edited)</span></span>\n                                </div>\n                            </div>\n                            <div class=\"col-2 d-flex align-items-center mr-5\">\n                                <span class=\"project_label\">#{{ issue.scrum_data.project_name }}</span>\n                            </div>\n                            <div class=\"col d-flex p-0 align-items-center\">\n                                <div class=\"d-inline-block text-truncate issue_box\">\n                                    <span class=\"less-emphasis\">{{ issue.issue }}</span>\n                                </div>\n                            </div>\n                            <div class=\"col d-flex pr-4 align-items-center justify-content-end\">\n                                <span class=\"deadline_label\">{{ issue.deadline | date:'mediumDate'}} - {{ issue.deadline | date:'shortTime'}}</span>\n                            </div>\n                            <sat-popover #issueDetail verticalAlign=\"below\" horizontalAlign=\"end\" forceAlignment>\n                                <div class=\"issue_details\">\n                                    <div class=\"d-flex justify-content-between\">\n                                        <div class=\"d-flex\">\n                                            <app-avatar [username]=\"issue.scrum_data.user_username\" [id]=\"issue.scrum_data.user_username\"></app-avatar>\n                                            <div class=\"ml-3\">\n                                                <span><b>{{ issue.scrum_data.user_username }}</b></span>\n                                                <br>\n                                                <span class=\"less-emphasis category_label\">{{ issue.scrum_data.date_created | date:'shortTime'}} <span *ngIf=\"issue.scrum_data.is_edited\">(edited)</span></span>\n                                            </div>\n                                        </div>\n                                        <p *ngIf=\"issue.is_urgent\" class=\"urgent p-1 pl-2 pr-2 rounded-left rounded-right\">Urgent</p>\n                                    </div>\n                                    <div class=\"pt-4 pb-4\">\n                                        <p>{{issue.issue}}</p>\n                                    </div>\n                                    <div class=\"d-flex\">\n                                        <div class=\"d-flex flex-column mr-3\">\n                                            <span class=\"label less-emphasis pb-2\">Date</span>\n                                            <div class=\"input-group\">\n                                            <input type=\"text\" bsDatepicker class=\"form-control border deadline_picker\" #deadline_date=\"bsDatepicker\" [bsConfig]=\"{ dateInputFormat: 'MMMM D, YYYY' }\" [(ngModel)]=\"issue.deadline\" (bsValueChange)=\"updateDeadline(issue.id, issue.deadline)\" [minDate]=\"today\"/>\n                                            <div class=\"input-group-append\">\n                                                <button class=\"btn btn-light border border-left-0\" (click)=\"deadline_date.toggle()\">\n                                                    <i class=\"fas fa-angle-down less-emphasis\"></i>\n                                                </button>\n                                            </div>\n                                            </div>\n                                        </div>\n                                        <div class=\"d-flex flex-column\">\n                                            <span class=\"label less-emphasis pb-2\">Time</span>\n                                            <timepicker [(ngModel)]=\"issue.deadline\" [showSpinners]=\"false\" minuteStep='1' (isValid)=\"updateDeadline(issue.id, issue.deadline)\"></timepicker>\n                                        </div>\n                                    </div>\n                                    <div>\n                                        <button #rButton type=\"button\" class=\"statusbtn btn btn-outline-success m-3 ml-4\" (click)=\"updateStatus(issue.id, rButton.value)\" *ngIf=\"issue.status == 'P'\" value=\"R\">Mark as Solved</button>\n                                        <button #cButton type=\"button\" class=\"statusbtn btn btn-outline-warning m-3\" (click)=\"updateStatus(issue.id, cButton.value)\" *ngIf=\"issue.status == 'P'\" value=\"C\">Close</button>\n                                    </div>\n                                </div>\n                            </sat-popover>\n                            <button type=\"button\" class=\"btn btn-light\" [satPopoverAnchorFor]=\"issueDetail\" (click)=\"issueDetail.toggle()\"><i class=\"fas fa-ellipsis-v less-emphasis\"></i>\n                            </button>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"container-fluid\">\n    <div class=\"row border-bottom d-flex justify-content-between\">\n        <div class=\"m-3 ml-5 pl-5 d-flex align-items-center w-50\">\n            <div class=\"tabs clickable\">\n                <span class=\"less-emphasis\" (click)=\"goToDashboard()\"><b>Dashboard</b></span>\n            </div>\n            <div class=\"tabs clickable\">\n                <span class=\"less-emphasis\"><b>All Issues</b></span>\n            </div>\n            <fa-icon [icon]=\"icons.search\" class=\"less-emphasis border-0 m-1 mr-3 ml-5 pl-5\"></fa-icon>\n            <input type=\"text\" placeholder=\"Search\" class=\"border-0 less-emphasis searchbar\" (input)=\"getIssues(search.value)\" #search>\n        </div>\n        <div class=\"m-3 mr-5\">\n            <app-avatar [username]=\"logged_user\" [id]=\"logged_user\"></app-avatar>\n        </div>\n    </div>\n    <div class=\"row issues_container\">\n        <div class=\"col p-5 mt-2 ml-5\">\n            <div class=\"row\">\n                <div class=\"d-flex align-items-center summary_box flex-fill\">\n                    <div class=\"marker_static\">\n                    </div>\n                    <div>\n                        <p class=\"mb-0 ml-2 title\">You have {{ getPending()?.length }} unresolved issues</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row pt-4 pb-4 justify-content-between\">\n                <div class=\"col d-flex flex-column\">\n                    <div class=\"d-flex flex-row align-items-center\">\n                        <span class=\"w-25 less-emphasis\">Select Project</span>\n                        <div class=\"input-group w-50\">\n                          <select class=\"custom-select less-emphasis\" (change)=\"filter_project=select_project.value\" #select_project>\n                            <option selected value=\"\">All Projects</option>\n                            <option *ngFor=\"let project of projects\">{{ project.name }}</option>\n                          </select>\n                        </div>\n                    </div>\n                    <br>\n                    <div class=\"d-flex flex-row align-items-center\">\n                        <span class=\"w-25 less-emphasis\">Members</span>\n                        <div class=\"input-group w-50\">\n                          <select class=\"custom-select less-emphasis\" (change)=\"filter_user=select_user.value\" #select_user>\n                            <option selected value=\"\">All Members</option>\n                            <option *ngFor=\"let user of users\">{{ user.username }}</option>\n                          </select>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col d-flex flex-column\">\n                    <div class=\"d-flex flex-row-reverse align-items-center\">\n                            <div class=\"w-25 input-group date_filters\">\n                                <input class=\"form-control datepicker less-emphasis\" ngx-mydatepicker name=\"to\" [(ngModel)]=\"to_model\" [options]=\"toOptions\" #to_dp=\"ngx-mydatepicker\" (dateChanged)=\"setDateToFilter($event)\"/>\n                                <span class=\"input-group-append\">\n                                    <button type=\"button\" class=\"btn btn-light less-emphasis grey-border\" (click)=\"to_dp.toggleCalendar()\">\n                                        <fa-icon [icon]=\"icons.calendar\"></fa-icon>\n                                    </button>\n                                </span>\n                            </div>\n                            <h3 class=\"m-0 mr-2 ml-2\">-</h3>\n                            <div class=\"w-25 input-group date_filters\">\n                                <input class=\"form-control datepicker less-emphasis\" ngx-mydatepicker name=\"from\" [(ngModel)]=\"from_model\" [options]=\"fromOptions\" #from_dp=\"ngx-mydatepicker\" (dateChanged)=\"setDateFromFilter($event)\"/>\n                                <span class=\"input-group-append\">\n                                    <button type=\"button\" class=\"btn btn-light  less-emphasis grey-border\" (click)=\"from_dp.toggleCalendar()\">\n                                        <fa-icon [icon]=\"icons.calendar\"></fa-icon>\n                                    </button>\n                                </span>\n                            </div>\n                        <span class=\"less-emphasis mr-4\">Date</span>\n                    </div>\n                    <br>\n                    <div class=\"d-flex flex-row-reverse align-items-center\">\n                        <div class=\"input-group w-50\">\n                          <select class=\"custom-select less-emphasis\" (change)=\"filter_status=select_status.value\" #select_status>\n                            <option selected value=\"\">All</option>\n                            <option value=\"P\">Pending</option>\n                            <option value=\"R\">Resolved</option>\n                            <option value=\"C\">Closed</option>\n                          </select>\n                        </div>\n                        <span class=\"mr-5 less-emphasis\">Status</span>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row pt-4\">\n                <div class=\"col-sm-3\">\n                    <h4><b>Issues list</b></h4>\n                </div>\n            </div>\n            <div class=\"row mt-3 \">\n                <div class=\"col-4 d-flex justify-content-end pr-5\">\n                    <span class=\"category_label\"><b>Project Channel</b></span>\n                </div>\n                <div class=\"col-2\"></div>\n                <div class=\"col\">\n                    <span class=\"category_label\"><b>Issues</b></span>\n                </div>\n                <div class=\"col d-flex justify-content-end mr-5\">\n                    <span class=\"category_label pr-5\"><b>Due Date</b></span>\n                </div>\n            </div>\n            <div class=\"mb-4\" *ngFor=\"let date_group of filtered_issues | groupIssues:'date_created' \">\n                <div *ngIf=\"isWithinDate(date_group.date, filter_from, filter_to)\">\n                    <div class=\"row mb-3\">\n                        <div class=\"col-sm-2 d-flex\">\n                            <span class=\"align-self-center grey-border less-emphasis\">{{ date_group.date | date:'longDate'}}</span>\n                        </div>\n                        <div class=\"col-sm-10\">\n                            <hr>\n                        </div>\n                    </div>\n                    <div class=\"d-flex flex-column m-1 scrumlist\">\n                        <div class=\"mt-1 mb-1 scrumitem\" *ngFor=\"let issue of date_group.issues\">\n                            <div *ngIf=\"(filter_user=='' || issue.scrum_data.user_username==filter_user) && (filter_project=='' || issue.scrum_data.project_name==filter_project) && (filter_status=='' || issue.status==filter_status) && isWithinDate(issue.scrum_data.date_created, filter_from, filter_to)\" class=\"d-flex align-items-center\">\n                                <app-marker [project]=\"issue.scrum_data.project_name\"></app-marker>\n                                <div class=\"d-flex flex-fill align-items-center\" >\n                                    <div class=\"col-2 d-flex mr-4\">\n                                        <div>\n                                            <app-avatar [username]=\"issue.scrum_data.user_username\" [id]=\"issue.scrum_data.user_username\"></app-avatar>\n                                        </div>\n                                        <div class=\"ml-3\">\n                                            <span><b>{{ issue.scrum_data.user_username }}</b></span>\n                                            <br>\n                                            <span class=\"less-emphasis category_label\">{{ issue.scrum_data.date_created | date:'shortTime'}} <span *ngIf=\"issue.scrum_data.is_edited\">(edited)</span></span>\n                                        </div>\n                                    </div>\n                                    <div class=\"col-2 d-flex align-items-center mr-5\">\n                                        <span class=\"project_label\">#{{ issue.scrum_data.project_name }}</span>\n                                    </div>\n                                    <div class=\"col d-flex p-0 align-items-center\">\n                                        <p *ngIf=\"issue.is_urgent\" class=\"urgent m-0 p-1 pl-2 pr-2 mr-4 rounded-left rounded-right\">Urgent</p>\n                                        <div class=\"d-inline-block text-truncate issue_box\">\n                                            <span class=\"less-emphasis\">{{ issue.issue }}</span>\n                                        </div>\n                                    </div>\n                                    <div class=\"col d-flex pr-4 align-items-center justify-content-end\">\n                                        <span class=\"deadline_label\">{{ issue.deadline | date:'mediumDate'}} - {{ issue.deadline | date:'shortTime'}}</span>\n                                    </div>\n                                    <sat-popover #issueDetail verticalAlign=\"center\" horizontalAlign=\"before\" forceAlignment>\n                                        <div class=\"issue_details\">\n                                            <div class=\"d-flex justify-content-between\">\n                                                <div class=\"d-flex\">\n                                                    <app-avatar [username]=\"issue.scrum_data.user_username\" [id]=\"issue.scrum_data.user_username\"></app-avatar>\n                                                    <div class=\"ml-3\">\n                                                        <span><b>{{ issue.scrum_data.user_username }}</b></span>\n                                                        <br>\n                                                        <span class=\"less-emphasis category_label\">{{ issue.scrum_data.date_created | date:'shortTime'}} <span *ngIf=\"issue.scrum_data.is_edited\">(edited)</span></span>\n                                                    </div>\n                                                </div>\n                                                <p *ngIf=\"issue.is_urgent\" class=\"urgent p-1 pl-2 pr-2 rounded-left rounded-right\">Urgent</p>\n                                            </div>\n                                            <div class=\"pt-4 pb-4\">\n                                                <p>{{issue.issue}}</p>\n                                            </div>\n                                            <div class=\"d-flex\">\n                                                <div class=\"d-flex flex-column mr-3\">\n                                                    <span class=\"label less-emphasis pb-2\">Date</span>\n                                                    <div class=\"input-group\">\n                                                    <input type=\"text\" bsDatepicker class=\"form-control border deadline_picker\" #deadline_date=\"bsDatepicker\" [bsConfig]=\"{ dateInputFormat: 'MMMM D, YYYY' }\" [(ngModel)]=\"issue.deadline\" (bsValueChange)=\"updateDeadline(issue.id, issue.deadline)\" [minDate]=\"today\"/>\n                                                    <div class=\"input-group-append\">\n                                                        <button class=\"btn btn-light border border-left-0\" (click)=\"deadline_date.toggle()\">\n                                                            <fa-icon [icon]=\"icons.angle_down\" class=\"less-emphasis\"></fa-icon>\n                                                        </button>\n                                                    </div>\n                                                    </div>\n                                                </div>\n                                                <div class=\"d-flex flex-column\">\n                                                    <span class=\"label less-emphasis pb-2\">Time</span>\n                                                    <timepicker [(ngModel)]=\"issue.deadline\" [showSpinners]=\"false\" minuteStep='1' (isValid)=\"updateDeadline(issue.id, issue.deadline)\"></timepicker>\n                                                </div>\n                                            </div>\n                                            <div>\n                                                <button #rButton type=\"button\" class=\"statusbtn btn btn-outline-success m-3 ml-4\" (click)=\"updateStatus(issue.id, rButton.value)\" *ngIf=\"issue.status == 'P'\" value=\"R\">Mark as Solved</button>\n                                                <button #cButton type=\"button\" class=\"statusbtn btn btn-outline-warning m-3\" (click)=\"updateStatus(issue.id, cButton.value)\" *ngIf=\"issue.status == 'P'\" value=\"C\">Close</button>\n                                            </div>\n                                        </div>\n                                    </sat-popover>\n                                    <fa-icon [icon]=\"icons.ellipsis\" class=\"less-emphasis clickable\" [satPopoverAnchorFor]=\"issueDetail\" (click)=\"issueDetail.toggle()\"></fa-icon>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -376,7 +355,7 @@ module.exports = "<div class=\"container-fluid\">\n    <div class=\"row border-b
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".issues_container {\n  margin: 0 120 0 120; }\n\n.issue_box {\n  max-width: 400px; }\n\n.issue_details {\n  background-color: white;\n  padding: 30px 40px;\n  box-shadow: 0 3px 8px 0 rgba(111, 126, 147, 0.16); }\n\n.marker_static {\n  width: 5px;\n  height: 61px;\n  margin-right: 30;\n  background-color: #2be5ac; }\n\n.summary_box {\n  background-color: #effffa; }\n\n.title {\n  font-size: 18px;\n  color: #2be5ac; }\n\n.deadline_label {\n  color: #dd2556; }\n"
+module.exports = ""
 
 /***/ }),
 
@@ -397,6 +376,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var app_services_authentication_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! app/services/authentication.service */ "./src/app/services/authentication.service.ts");
 /* harmony import */ var app_constants_endpoints__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! app/constants/endpoints */ "./src/app/constants/endpoints.ts");
 /* harmony import */ var _uirouter_angular__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @uirouter/angular */ "./node_modules/@uirouter/angular/lib/index.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fortawesome/free-regular-svg-icons */ "./node_modules/@fortawesome/free-regular-svg-icons/index.es.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -413,6 +394,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
 var IssueboardComponent = /** @class */ (function () {
     function IssueboardComponent(http, searchService, dataService, stateService, authService) {
         this.http = http;
@@ -420,6 +403,12 @@ var IssueboardComponent = /** @class */ (function () {
         this.dataService = dataService;
         this.stateService = stateService;
         this.authService = authService;
+        this.icons = {
+            search: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faSearch"],
+            calendar: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_8__["faCalendar"],
+            ellipsis: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faEllipsisV"],
+            angle_down: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faAngleDown"]
+        };
         this.today = new Date();
         this.filter_to = new Date();
         this.filter_from = new Date(this.filter_to.getFullYear(), this.filter_to.getMonth(), this.filter_to.getDate() - 6);
@@ -462,7 +451,7 @@ var IssueboardComponent = /** @class */ (function () {
         };
     }
     IssueboardComponent.prototype.ngOnInit = function () {
-        this.authService.authenticate();
+        this.logged_user = this.authService.authenticate();
         this.fetchIssues();
         this.fetchProjects();
         this.fetchUsers();
@@ -472,6 +461,7 @@ var IssueboardComponent = /** @class */ (function () {
         this.dataService.fetchIssues()
             .subscribe(function (data) {
             _this.issues = data;
+            _this.filtered_issues = data;
         });
     };
     IssueboardComponent.prototype.fetchUsers = function () {
@@ -516,9 +506,20 @@ var IssueboardComponent = /** @class */ (function () {
                 .subscribe();
         }
     };
-    IssueboardComponent.prototype.isWithinDate = function (scrum_date, filter_from, filter_to) {
-        return (new Date(scrum_date).setHours(0, 0, 0, 0) >= filter_from.setHours(0, 0, 0, 0) &&
-            new Date(scrum_date).setHours(0, 0, 0, 0) <= filter_to.setHours(0, 0, 0, 0));
+    IssueboardComponent.prototype.getIssues = function (keyword) {
+        this.filtered_issues = this.searchService.searchIssues(keyword, this.issues);
+    };
+    IssueboardComponent.prototype.getPending = function () {
+        if (!this.issues) {
+            return null;
+        }
+        return this.issues.filter(function (issue) {
+            return issue.status == 'P';
+        });
+    };
+    IssueboardComponent.prototype.isWithinDate = function (issue_date, filter_from, filter_to) {
+        return (new Date(issue_date).setHours(0, 0, 0, 0) >= filter_from.setHours(0, 0, 0, 0) &&
+            new Date(issue_date).setHours(0, 0, 0, 0) <= filter_to.setHours(0, 0, 0, 0));
     };
     IssueboardComponent.prototype.goToDashboard = function () {
         this.stateService.go('scrumboard');
@@ -549,7 +550,7 @@ var IssueboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".hoverable:hover{\n    background-color: gainsboro;\n}\n\n\n.check{\n    color: #2be5ac;\n}\n\n\n.wip{\n    color: #ffc455;\n}\n\n\n.issueitem{\n    box-shadow: 0 3px 8px 0 rgba(111, 126, 147, 0.16);\n}\n\n\n.label{\n    font-size: 14px;\n}\n\n\n.date_filters{\n    width: 170px;\n}\n\n\n.redmarker{\n  width: 2px;\n  height: 37px;\n  background-color: #dd2556;\n}\n\n\n.scrumlist{\n    overflow-y: auto;\n    overflow-x: hidden;\n}\n\n\n.issuelist{\n    overflow-y: auto;\n    overflow-x: hidden;\n    height: 1350px;\n}\n\n\n.datepicker{\n    width: 130px;\n}\n\n\n.wraplongtext{\n    word-wrap: break-word;\n}"
+module.exports = ""
 
 /***/ }),
 
@@ -560,7 +561,7 @@ module.exports = ".hoverable:hover{\n    background-color: gainsboro;\n}\n\n\n.c
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n    <div class=\"row border-bottom d-flex justify-content-between\">\n        <div class=\"m-3 ml-5 pl-5 d-flex align-items-center w-50\">\n            <div class=\"tabs clickable\">\n                <span class=\"less-emphasis\"><b>Dashboard</b></span>\n            </div>\n            <div class=\"tabs clickable\" (click)=\"goToIssues()\">\n                <span class=\"less-emphasis\"><b>All Issues</b></span>\n            </div>\n            <i class=\"less-emphasis fas fa-search border-0 m-1 mr-3 ml-5 pl-5\"></i>\n            <input type=\"text\" placeholder=\"Search\" class=\"border-0 less-emphasis searchbar\" (input)=\"getScrum(search.value)\" #search>\n        </div>\n        <div class=\"m-3 mr-5\">\n            <app-avatar></app-avatar>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col p-5 mt-2 ml-5\">\n            <div class=\"row mt-3\">\n                <h1>Welcome back, {{logged_user}}!</h1>\n            </div>\n            <div class=\"row\">\n                <p class=\"less-emphasis\">There are {{ issues?.length }} issues and {{ scrums_bydate?.length }} urgent tickets</p>\n            </div>\n                <hr>\n            <div class=\"row pt-4 pb-4\">\n                <div class=\"col d-flex flex-column\">\n                    <div class=\"d-flex flex-row align-items-center\">\n                        <span class=\"w-25 less-emphasis\">Select Project</span>\n                        <div class=\"input-group\">\n                          <select class=\"custom-select less-emphasis\" (change)=\"filter_project=select_project.value; filtered_scrum=scrums_bydate\" #select_project>\n                            <option selected value=\"\">All Projects</option>\n                            <option *ngFor=\"let project of projects\">{{ project.name }}</option>\n                          </select>\n                        </div>\n                    </div>\n                    <br>\n                    <div class=\"d-flex flex-row align-items-center\">\n                        <span class=\"w-25 less-emphasis\">Members</span>\n                        <div class=\"input-group\">\n                          <select class=\"custom-select less-emphasis\" (change)=\"filter_user=select_user.value; filtered_scrum=scrums_bydate\" #select_user>\n                            <option selected value=\"\">All Members</option>\n                            <option *ngFor=\"let user of users\">{{ user.username }}</option>\n                          </select>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col d-flex flex-column\">\n                    <div class=\"d-flex flex-row-reverse align-items-center\">\n                            <div class=\"input-group date_filters\">\n                                <input class=\"form-control datepicker less-emphasis\" ngx-mydatepicker name=\"to\" [(ngModel)]=\"to_model\" [options]=\"toOptions\" #to_dp=\"ngx-mydatepicker\" (dateChanged)=\"setDateToFilter($event); filtered_scrum=scrums_bydate\"/>\n                                <span class=\"input-group-append\">\n                                    <button type=\"button\" class=\"btn btn-light less-emphasis grey-border\" (click)=\"to_dp.toggleCalendar()\">\n                                        <i class=\"far fa-calendar\"></i>\n                                    </button>\n                                </span>\n                            </div>\n                            <h3 class=\"m-0 mr-2 ml-2\">-</h3>\n                            <div class=\"input-group date_filters\">\n                                <input class=\"form-control datepicker less-emphasis\" ngx-mydatepicker name=\"from\" [(ngModel)]=\"from_model\" [options]=\"fromOptions\" #from_dp=\"ngx-mydatepicker\" (dateChanged)=\"setDateFromFilter($event); filtered_scrum=scrums_bydate\"/>\n                                <span class=\"input-group-append\">\n                                    <button type=\"button\" class=\"btn btn-light  less-emphasis grey-border\" (click)=\"from_dp.toggleCalendar()\">\n                                        <i class=\"far fa-calendar\"></i>\n                                    </button>\n                                </span>\n                            </div>\n                        <span class=\"less-emphasis mr-4\">Date</span>\n                            <!-- <div class=\"input-group\">\n                                <div class=\"input-group-prepend\">\n                                    <div class=\"p-2 d-flex align-items-center border rounded-left\">\n                                        <i class=\"far fa-calendar\"></i>\n                                    </div>\n                                </div>\n                                <input type=\"text\" ngbDatepicker class=\"border border-left-0 form-control\" #d=\"ngbDatepicker\"/>\n                                <div class=\"input-group-append\">\n                                    <button class=\"btn btn-light border border-left-0\" (click)=\"d.toggle()\"><i class=\"fas fa-chevron-down\"></i></button>\n                                </div>\n                            </div> -->\n                    </div>\n                </div>\n            </div>\n            <!-- <div class=\"row\" *ngIf=\"filter_user && filter_hours\">\n                <div>\n                    <h2 class=\"p-3 m-0\">{{ filter_user }} has logged a total of {{ getTotalHours(filter_user, filter_project, filter_from, filter_to) }} hours <span *ngIf=\"filter_project\">in project {{ filter_project }}</span> from {{ filter_from | date:'longDate' }} to {{ filter_to | date:'longDate' }}</h2>\n                </div>\n            </div> -->\n            <div class=\"row pt-4\">\n                <div class=\"col-sm-3\">\n                    <h4><b>Stand up updates</b></h4>\n                </div>\n            </div>\n            <div class=\"row mt-3 \">\n                <div class=\"col-4 d-flex justify-content-end pr-5\">\n                    <span class=\"category_label\"><b>Project Channel</b></span>\n                </div>\n                <div class=\"col-2\"></div>\n                <div class=\"col\">\n                    <span class=\"category_label\"><b>Issues</b></span>\n                </div>\n                <div class=\"col d-flex justify-content-end mr-4\">\n                    <span class=\"category_label\"><b>Total Hours</b></span>\n                </div>\n            </div>\n            <div class=\"mb-4\" *ngFor=\"let date_group of filtered_scrum\">\n                <div *ngIf=\"isWithinDate(date_group.date_created, filter_from, filter_to)\">\n                    <div class=\"row mb-3\">\n                        <div class=\"col-sm-2 d-flex\">\n                            <span class=\"align-self-center grey-border less-emphasis\">{{ date_group.date_created | date:'longDate'}}</span>\n                        </div>\n                        <div class=\"col-sm-10\">\n                            <hr>\n                        </div>\n                    </div>\n                    <div class=\"d-flex flex-column m-1 scrumlist\">\n                        <div class=\"mt-1 mb-1 scrumitem\" *ngFor=\"let scrum of date_group.scrums\">\n                            <div *ngIf=\"((filter_user=='' || scrum.user==filter_user) && (filter_project=='' || scrum.project==filter_project))\">\n                                <div class=\"d-flex pt-4 pb-4 clickable\" (click)=\"scrum.open = !scrum.open\">\n                                    <div class=\"col-2 d-flex\">\n                                        <div>\n                                            <app-avatar [username]=\"scrum.user\" [id]=\"scrum.user\"></app-avatar>\n                                        </div>\n                                        <div class=\"ml-3\">\n                                            <span><b>{{ scrum.user }}</b></span>\n                                            <br>\n                                            <span class=\"less-emphasis category_label\">{{ scrum.date_created | date:'shortTime'}} <span *ngIf=\"scrum.is_edited\">(edited)</span></span>\n                                        </div>\n                                    </div>\n                                    <div class=\"col-4 d-flex ml-3 align-items-center\">\n                                        <span class=\"project_label\" *ngIf=\"!scrum.open\">#{{ scrum.project }}</span>\n                                    </div>\n                                    <div class=\"col d-flex p-0 align-items-center\">\n                                        <div *ngIf=\"!scrum.open\">\n                                            <span class=\"less-emphasis\" *ngIf=\"!hasPending(scrum)\">No issues <img class=\"ml-3\" src=\"https://png.icons8.com/color/30/000000/confetti.png\"></span>\n                                            <span class=\"less-emphasis\" *ngIf=\"hasPending(scrum)\">{{ scrum.issue_logs[0].issue }}</span>\n                                        </div>\n                                    </div>\n                                    <div class=\"col d-flex pr-4 align-items-center justify-content-end\">\n                                        <span><b>{{ scrum.hours }}</b></span>\n                                    </div>\n                                </div>\n                                <div [collapse]=\"!scrum.open\">\n                                    <div class=\"d-flex flex-column p-5\">\n                                        <div>\n                                            <span class=\"project_label\">#{{ scrum.project }}</span>\n                                        </div>\n                                        <br>\n                                        <div class=\"d-flex\">\n                                            <div class=\"col pr-4\">\n                                                <div class=\"row flex-column mb-5\">\n                                                    <p class=\"category_label\"><b>Done</b></p>\n                                                    <div class=\"d-flex\" *ngFor=\"let log of scrum.done_logs\">\n                                                        <i class=\"fas fa-check fa-xs check pr-3 pt-1\"></i> \n                                                        <p class=\"less-emphasis mb-2\">{{ log.message }}</p>\n                                                    </div>\n                                                </div>\n                                                <div class=\"row flex-column\">\n                                                    <p class=\"category_label\"><b>In progress</b></p>\n                                                    <div class=\"d-flex\" *ngFor=\"let log of scrum.wip_logs\">\n                                                        <i class=\"fas fa-circle-notch fa-xs pr-3 pt-1 wip\"></i>\n                                                        <p class=\"less-emphasis mb-2\" > {{ log.message }}</p>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"col\">\n                                                <div class=\"row flex-column mb-5\">\n                                                    <p class=\"category_label\"><b>Pending</b></p>\n                                                    <span class=\"less-emphasis\" *ngIf=\"!hasPending(scrum)\">No issues <img class=\"ml-3\" src=\"https://png.icons8.com/color/30/000000/confetti.png\"></span>\n                                                    <div *ngFor=\"let issue of scrum.issue_logs\" class=\"issueitem mb-3 d-flex\" >\n                                                        <div class=\"redmarker align-self-center\"></div>\n                                                        <div class=\"d-flex flex-column flex-fill\">\n                                                            <div class=\"row d-flex flex-column pt-3 pl-4 pr-3 pb-0 ml-2 mr-2 mb-2\" (click)=\"issue.open = !issue.open\">\n                                                                <div class=\"d-flex justify-content-between\">\n                                                                    <p class=\"mb-1 ml-2\">{{ issue.issue }}</p>\n                                                                    <div class=\"d-flex align-items-center\">\n                                                                        <p *ngIf=\"issue.is_urgent\" class=\"urgent p-1 pl-2 pr-2 rounded-left rounded-right mb-1 mr-2\">Urgent</p>\n                                                                        <i class=\"fas fa-angle-down less-emphasis ml-4\" *ngIf=\"!issue.open\"></i>\n                                                                        <i class=\"fas fa-angle-up less-emphasis ml-4\" *ngIf=\"issue.open\"></i>\n                                                                    </div>\n                                                                </div>\n                                                                <div *ngIf=\"!issue.open\">\n                                                                    <div class=\"d-flex\" *ngIf=\"issue.deadline\">\n                                                                    <div class=\"mr-2\">\n                                                                        <img src=\"https://png.icons8.com/metro/15/dd2556/leave.png\" class=\"ml-2\">\n                                                                    </div>\n                                                                    <p class=\"less-emphasis category_labelel\">{{ issue.deadline | date:'longDate'}} - {{ issue.deadline | date:'shortTime'}}</p>\n                                                                    </div>\n                                                                </div>\n                                                            </div>\n                                                            <div class=\"ml-3 mr-2\" [collapse]=\"!issue.open\">\n                                                                <div class=\"d-flex ml-4\">\n                                                                    <div class=\"d-flex flex-column mr-3\">\n                                                                        <span class=\"label less-emphasis pb-2\">Date</span>\n                                                                        <div class=\"input-group\">\n                                                                        <input type=\"text\" bsDatepicker class=\"form-control border deadline_picker\" #deadline_date=\"bsDatepicker\" [bsConfig]=\"{ dateInputFormat: 'MMMM D, YYYY' }\" [(ngModel)]=\"issue.deadline\" (bsValueChange)=\"updateDeadline(issue.id, issue.deadline)\" [minDate]=\"today\"/>\n                                                                        <div class=\"input-group-append\">\n                                                                            <button class=\"btn btn-light border border-left-0\" (click)=\"deadline_date.toggle()\">\n                                                                                <i class=\"fas fa-angle-down less-emphasis\"></i>\n                                                                            </button>\n                                                                        </div>\n                                                                        </div>\n                                                                    </div>\n                                                                    <div class=\"d-flex flex-column\">\n                                                                        <span class=\"label less-emphasis pb-2\">Time</span>\n                                                                        <timepicker [(ngModel)]=\"issue.deadline\" [showSpinners]=\"false\" minuteStep='1' (isValid)=\"updateDeadline(issue.id, issue.deadline)\"></timepicker>\n                                                                    </div>\n                                                                </div>\n                                                                <div>\n                                                                    <button #rButton type=\"button\" class=\"statusbtn btn btn-outline-success m-3 ml-4\" (click)=\"updateStatus(issue.id, rButton.value)\" *ngIf=\"issue.status == 'P'\" value=\"R\">Mark as Solved</button>\n                                                                    <button #cButton type=\"button\" class=\"statusbtn btn btn-outline-warning m-3\" (click)=\"updateStatus(issue.id, cButton.value)\" *ngIf=\"issue.status == 'P'\" value=\"C\">Close</button>\n                                                                </div>\n                                                            </div>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-3 border-left issuelist p-0\">\n            <div class=\"row m-4\">\n                <b class=\"category_label\">Issues stream</b>\n            </div>\n            <div class=\"d-flex flex-column\">\n                <div *ngFor=\"let issue of issues\">\n                    <div class=\"d-flex pl-4 pt-3 pb-3 hoverable clickable\" (click)=\"getIssue(issue.id)\" *ngIf=\"issue.status=='P'\">\n                        <div class=\"d-flex\">\n                            <app-avatar [username]=\"issue.scrum_data.user_username\" [id]=\"issue.scrum_data.user_username\"></app-avatar>\n                        </div>\n                        <div class=\"d-flex flex-fill flex-column ml-3 mr-5\">\n                            <div class=\"d-flex justify-content-between mb-1\">\n                                    <p class=\"m-0\"><b>{{ issue.scrum_data.user_username }}</b></p>\n                                    <p class=\"m-0 project_label label\">#{{ issue.scrum_data.project_name }}</p>\n                                    <p class=\"m-0 less-emphasis\">{{ issue.scrum_data.date_created | date:'shortTime'}}</p>\n                            </div>\n                            <div class=\"d-flex flex-fill justify-content-between mb-1 less-emphasis\">\n                                <span>{{ issue.issue }}</span>\n                                <p *ngIf=\"issue.is_urgent\" class=\"urgent p-1 pl-2 pr-2 rounded-left rounded-right\">Urgent</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"container-fluid\">\n    <div class=\"row border-bottom d-flex justify-content-between\">\n        <div class=\"m-3 ml-5 pl-5 d-flex align-items-center w-50\">\n            <div class=\"tabs clickable\">\n                <span class=\"less-emphasis\"><b>Dashboard</b></span>\n            </div>\n            <div class=\"tabs clickable\" (click)=\"goToIssues()\">\n                <span class=\"less-emphasis\"><b>All Issues</b></span>\n            </div>\n            <fa-icon [icon]=\"icons.search\" class=\"less-emphasis border-0 m-1 mr-3 ml-5 pl-5\"></fa-icon>\n            <input type=\"text\" placeholder=\"Search\" class=\"border-0 less-emphasis searchbar\" (input)=\"getScrum(search.value)\" #search>\n        </div>\n        <div class=\"m-3 mr-5\">\n            <app-avatar [username]=\"logged_user\" [id]=\"logged_user\"></app-avatar>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col p-5 mt-2 ml-5\">\n            <div class=\"row mt-3\">\n                <h1>Welcome back, {{logged_user}}!</h1>\n            </div>\n            <div class=\"row\">\n                <p class=\"less-emphasis\">There are {{ getPending()?.length }} issues and {{ getUrgent()?.length }} urgent tickets</p>\n            </div>\n                <hr>\n            <div class=\"row pt-4 pb-4\">\n                <div class=\"col d-flex flex-column\">\n                    <div class=\"d-flex flex-row align-items-center\">\n                        <span class=\"w-25 less-emphasis\">Select Project</span>\n                        <div class=\"input-group\">\n                          <select class=\"custom-select less-emphasis\" (change)=\"filter_project=select_project.value; filtered_scrum=scrums_bydate\" #select_project>\n                            <option selected value=\"\">All Projects</option>\n                            <option *ngFor=\"let project of projects\">{{ project.name }}</option>\n                          </select>\n                        </div>\n                    </div>\n                    <br>\n                    <div class=\"d-flex flex-row align-items-center\">\n                        <span class=\"w-25 less-emphasis\">Members</span>\n                        <div class=\"input-group\">\n                          <select class=\"custom-select less-emphasis\" (change)=\"filter_user=select_user.value; filtered_scrum=scrums_bydate\" #select_user>\n                            <option selected value=\"\">All Members</option>\n                            <option *ngFor=\"let user of users\">{{ user.username }}</option>\n                          </select>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col d-flex flex-column\">\n                    <div class=\"d-flex flex-row-reverse align-items-center\">\n                            <div class=\"input-group date_filters\">\n                                <input class=\"form-control datepicker less-emphasis\" ngx-mydatepicker name=\"to\" [(ngModel)]=\"to_model\" [options]=\"toOptions\" #to_dp=\"ngx-mydatepicker\" (dateChanged)=\"setDateToFilter($event); filtered_scrum=scrums_bydate\"/>\n                                <span class=\"input-group-append\">\n                                    <button type=\"button\" class=\"btn btn-light less-emphasis grey-border\" (click)=\"to_dp.toggleCalendar()\">\n                                        <fa-icon [icon]=\"icons.calendar\"></fa-icon>\n                                    </button>\n                                </span>\n                            </div>\n                            <h3 class=\"m-0 mr-2 ml-2\">-</h3>\n                            <div class=\"input-group date_filters\">\n                                <input class=\"form-control datepicker less-emphasis\" ngx-mydatepicker name=\"from\" [(ngModel)]=\"from_model\" [options]=\"fromOptions\" #from_dp=\"ngx-mydatepicker\" (dateChanged)=\"setDateFromFilter($event); filtered_scrum=scrums_bydate\"/>\n                                <span class=\"input-group-append\">\n                                    <button type=\"button\" class=\"btn btn-light  less-emphasis grey-border\" (click)=\"from_dp.toggleCalendar()\">\n                                        <fa-icon [icon]=\"icons.calendar\"></fa-icon>\n                                    </button>\n                                </span>\n                            </div>\n                        <span class=\"less-emphasis mr-4\">Date</span>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row pt-4\">\n                <div class=\"col-sm-3\">\n                    <h4><b>Stand up updates</b></h4>\n                </div>\n            </div>\n            <div class=\"row mt-3 \">\n                <div class=\"col-4 d-flex justify-content-end pr-5\">\n                    <span class=\"category_label\"><b>Project Channel</b></span>\n                </div>\n                <div class=\"col-2\"></div>\n                <div class=\"col\">\n                    <span class=\"category_label\"><b>Issues</b></span>\n                </div>\n                <div class=\"col d-flex justify-content-end mr-4\">\n                    <span class=\"category_label\"><b>Total Hours</b></span>\n                </div>\n            </div>\n            <div class=\"mb-4\" *ngFor=\"let date_group of filtered_scrum | groupScrums:'date_created' \">\n                <div *ngIf=\"isWithinDate(date_group.date, filter_from, filter_to)\">\n                    <div class=\"row mb-3\">\n                        <div class=\"col-sm-2 d-flex\">\n                            <span class=\"align-self-center grey-border less-emphasis\">{{ date_group.date | date:'longDate'}}</span>\n                        </div>\n                        <div class=\"col-sm-10\">\n                            <hr>\n                        </div>\n                    </div>\n                    <div class=\"d-flex flex-column m-1 scrumlist\">\n                        <div class=\"mt-1 mb-1 scrumitem\" *ngFor=\"let scrum of date_group.scrums\">\n                            <div *ngIf=\"((filter_user=='' || scrum.user==filter_user) && (filter_project=='' || scrum.project==filter_project))\">\n                                <div class=\"d-flex clickable align-items-center\" (click)=\"scrum.open = !scrum.open\">\n                                    <app-marker [project]=\"scrum.project\"></app-marker>\n                                    <div class=\"col-2 d-flex\">\n                                        <div>\n                                            <app-avatar [username]=\"scrum.user\" [id]=\"scrum.user\"></app-avatar>\n                                        </div>\n                                        <div class=\"ml-3\">\n                                            <span><b>{{ scrum.user }}</b></span>\n                                            <br>\n                                            <span class=\"less-emphasis category_label\">{{ scrum.date_created | date:'shortTime'}} <span *ngIf=\"scrum.is_edited\">(edited)</span></span>\n                                        </div>\n                                    </div>\n                                    <div class=\"col-4 d-flex ml-3 align-items-center\">\n                                        <span class=\"project_label\" *ngIf=\"!scrum.open\">#{{ scrum.project }}</span>\n                                    </div>\n                                    <div class=\"col d-flex p-0 align-items-center\">\n                                        <div *ngIf=\"!scrum.open\">\n                                            <span class=\"less-emphasis\" *ngIf=\"!hasPending(scrum)\">No issues <img class=\"ml-3\" src=\"assets/img/confetti.png\"></span>\n                                            <span class=\"less-emphasis\" *ngIf=\"hasPending(scrum)\">{{ scrum.issue_logs[0].issue }}</span>\n                                        </div>\n                                    </div>\n                                    <div class=\"col d-flex pr-4 align-items-center justify-content-end\">\n                                        <span><b>{{ scrum.hours }}</b></span>\n                                    </div>\n                                </div>\n                                <div [collapse]=\"!scrum.open\">\n                                    <div class=\"d-flex flex-column p-5\">\n                                        <div>\n                                            <span class=\"project_label\">#{{ scrum.project }}</span>\n                                        </div>\n                                        <br>\n                                        <div class=\"d-flex\">\n                                            <div class=\"col pr-4\">\n                                                <div class=\"row flex-column mb-5\">\n                                                    <p class=\"category_label\"><b>Done</b></p>\n                                                    <div class=\"d-flex\" *ngFor=\"let log of scrum.done_logs\">\n                                                        <fa-icon [icon]=\"icons.check\" class=\"pr-3 pt-1 check\"></fa-icon>\n                                                        <p class=\"less-emphasis mb-2\">{{ log.message }}</p>\n                                                    </div>\n                                                </div>\n                                                <div class=\"row flex-column\">\n                                                    <p class=\"category_label\"><b>In progress</b></p>\n                                                    <div class=\"d-flex\" *ngFor=\"let log of scrum.wip_logs\">\n                                                        <fa-icon [icon]=\"icons.circle_notch\" class=\"pr-3 pt-1 wip\"></fa-icon>\n                                                        <p class=\"less-emphasis mb-2\" > {{ log.message }}</p>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"col\">\n                                                <div class=\"row flex-column mb-5\">\n                                                    <p class=\"category_label\"><b>Pending</b></p>\n                                                    <span class=\"less-emphasis\" *ngIf=\"!hasPending(scrum)\">No issues <img class=\"ml-3\" src=\"assets/img/confetti.png\"></span>\n                                                    <div *ngFor=\"let issue of scrum.issue_logs\" class=\"issueitem mb-3 d-flex\" >\n                                                        <div class=\"redmarker align-self-center\"></div>\n                                                        <div class=\"d-flex flex-column flex-fill\">\n                                                            <div class=\"row d-flex flex-column pt-3 pl-4 pr-3 pb-0 ml-2 mr-2 mb-2 clickable\" (click)=\"issue.open = !issue.open\">\n                                                                <div class=\"d-flex justify-content-between\">\n                                                                    <p class=\"mb-1 ml-2\">{{ issue.issue }}</p>\n                                                                    <div class=\"d-flex align-items-center\">\n                                                                        <p *ngIf=\"issue.is_urgent\" class=\"urgent p-1 pl-2 pr-2 rounded-left rounded-right mb-1 mr-2\">Urgent</p>\n                                                                        <fa-icon [icon]=\"icons.angle_down\" class=\"less-emphasis ml-4\" *ngIf=\"!issue.open\"></fa-icon>\n                                                                        <fa-icon [icon]=\"icons.angle_up\" class=\"less-emphasis ml-4\" *ngIf=\"issue.open\"></fa-icon>\n                                                                    </div>\n                                                                </div>\n                                                                <div *ngIf=\"!issue.open\">\n                                                                    <div class=\"d-flex\" *ngIf=\"issue.deadline\">\n                                                                    <div class=\"mr-2\">\n                                                                        <img src=\"assets/img/leave.png\" class=\"ml-2\">\n                                                                    </div>\n                                                                    <p class=\"less-emphasis category_labelel\">{{ issue.deadline | date:'longDate'}} - {{ issue.deadline | date:'shortTime'}}</p>\n                                                                    </div>\n                                                                </div>\n                                                            </div>\n                                                            <div class=\"ml-3 mr-2\" [collapse]=\"!issue.open\">\n                                                                <div class=\"d-flex ml-4\">\n                                                                    <div class=\"d-flex flex-column mr-3\">\n                                                                        <span class=\"label less-emphasis pb-2\">Date</span>\n                                                                        <div class=\"input-group\">\n                                                                        <input type=\"text\" bsDatepicker class=\"form-control border deadline_picker\" #deadline_date=\"bsDatepicker\" [bsConfig]=\"{ dateInputFormat: 'MMMM D, YYYY' }\" [(ngModel)]=\"issue.deadline\" (bsValueChange)=\"updateDeadline(issue.id, issue.deadline)\" [minDate]=\"today\"/>\n                                                                        <div class=\"input-group-append\">\n                                                                            <button class=\"btn btn-light border border-left-0\" (click)=\"deadline_date.toggle()\">\n                                                                                <fa-icon [icon]=\"icons.angle_down\" class=\"less-emphasis\"></fa-icon>\n                                                                            </button>\n                                                                        </div>\n                                                                        </div>\n                                                                    </div>\n                                                                    <div class=\"d-flex flex-column\">\n                                                                        <span class=\"label less-emphasis pb-2\">Time</span>\n                                                                        <timepicker [(ngModel)]=\"issue.deadline\" [showSpinners]=\"false\" minuteStep='1' (isValid)=\"updateDeadline(issue.id, issue.deadline)\"></timepicker>\n                                                                    </div>\n                                                                </div>\n                                                                <div>\n                                                                    <button #rButton type=\"button\" class=\"statusbtn btn btn-outline-success m-3 ml-4\" (click)=\"updateStatus(issue.id, rButton.value)\" *ngIf=\"issue.status == 'P'\" value=\"R\">Mark as Solved</button>\n                                                                    <button #cButton type=\"button\" class=\"statusbtn btn btn-outline-warning m-3\" (click)=\"updateStatus(issue.id, cButton.value)\" *ngIf=\"issue.status == 'P'\" value=\"C\">Close</button>\n                                                                </div>\n                                                            </div>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-3 border-left issuelist p-0\">\n            <div class=\"row m-4\">\n                <b class=\"category_label\">Issues stream</b>\n            </div>\n            <div class=\"d-flex flex-column\">\n                <div *ngFor=\"let issue of issues\">\n                    <div class=\"d-flex pl-4 pt-3 pb-3 hoverable clickable\" (click)=\"getIssue(issue.id)\" *ngIf=\"issue.status=='P'\">\n                        <div class=\"d-flex\">\n                            <app-avatar [username]=\"issue.scrum_data.user_username\" [id]=\"issue.scrum_data.user_username\"></app-avatar>\n                        </div>\n                        <div class=\"d-flex flex-fill flex-column ml-3 mr-5\">\n                            <div class=\"d-flex justify-content-between mb-1\">\n                                    <p class=\"m-0\"><b>{{ issue.scrum_data.user_username }}</b></p>\n                                    <p class=\"m-0 project_label label\">#{{ issue.scrum_data.project_name }}</p>\n                                    <p class=\"m-0 less-emphasis\">{{ issue.scrum_data.date_created | date:'shortTime'}}</p>\n                            </div>\n                            <div class=\"d-flex flex-fill justify-content-between mb-1 less-emphasis\">\n                                <span>{{ issue.issue }}</span>\n                                <p *ngIf=\"issue.is_urgent\" class=\"urgent p-1 pl-2 pr-2 rounded-left rounded-right\">Urgent</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -584,6 +585,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var app_services_authentication_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! app/services/authentication.service */ "./src/app/services/authentication.service.ts");
 /* harmony import */ var _uirouter_angular__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @uirouter/angular */ "./node_modules/@uirouter/angular/lib/index.js");
 /* harmony import */ var app_constants_endpoints__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! app/constants/endpoints */ "./src/app/constants/endpoints.ts");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @fortawesome/free-regular-svg-icons */ "./node_modules/@fortawesome/free-regular-svg-icons/index.es.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -602,6 +605,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
 var ScrumboardComponent = /** @class */ (function () {
     function ScrumboardComponent(http, filterService, searchService, dataService, stateService, authService) {
         this.http = http;
@@ -610,6 +615,14 @@ var ScrumboardComponent = /** @class */ (function () {
         this.dataService = dataService;
         this.stateService = stateService;
         this.authService = authService;
+        this.icons = {
+            circle_notch: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_9__["faCircleNotch"],
+            check: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_9__["faCheck"],
+            search: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_9__["faSearch"],
+            calendar: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_10__["faCalendar"],
+            angle_up: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_9__["faAngleUp"],
+            angle_down: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_9__["faAngleDown"]
+        };
         this.today = new Date();
         this.filter_to = new Date();
         this.filter_from = new Date(this.filter_to.getFullYear(), this.filter_to.getMonth(), this.filter_to.getDate() - 6);
@@ -657,8 +670,7 @@ var ScrumboardComponent = /** @class */ (function () {
         };
     }
     ScrumboardComponent.prototype.ngOnInit = function () {
-        this.authService.authenticate();
-        this.logged_user = localStorage.getItem('user');
+        this.logged_user = this.authService.authenticate();
         this.fetchIssues();
         this.fetchScrums();
         this.fetchUsers();
@@ -670,15 +682,6 @@ var ScrumboardComponent = /** @class */ (function () {
             .subscribe(function (data) {
             _this.scrums_bydate = data;
             var scrums = underscore__WEBPACK_IMPORTED_MODULE_0__["map"](_this.scrums_bydate, function (scrum) { return scrum.scrums; });
-            console.log(underscore__WEBPACK_IMPORTED_MODULE_0__["uniq"](scrums, true, 'date_created'));
-            // this.scrums.map(date_group => {
-            //   date_group.scrums.map(scrum => {
-            //     scrum.issue_logs.map(issue => {
-            //                     issue.open = false
-            //                 })
-            //     return scrum
-            //   })
-            // })
             _this.filtered_scrum = data;
         });
     };
@@ -724,6 +727,23 @@ var ScrumboardComponent = /** @class */ (function () {
                 });
             })];
     };
+    ScrumboardComponent.prototype.getUrgent = function () {
+        if (!this.issues) {
+            return null;
+        }
+        return this.issues.filter(function (issue) {
+            return issue.is_urgent == true &&
+                issue.status == 'P';
+        });
+    };
+    ScrumboardComponent.prototype.getPending = function () {
+        if (!this.issues) {
+            return null;
+        }
+        return this.issues.filter(function (issue) {
+            return issue.status == 'P';
+        });
+    };
     ScrumboardComponent.prototype.updateStatus = function (id, status) {
         this.http.post(Object(app_constants_endpoints__WEBPACK_IMPORTED_MODULE_8__["UPDATE_ISSUE_STATUS"])(id), { "status": status })
             .subscribe();
@@ -731,22 +751,15 @@ var ScrumboardComponent = /** @class */ (function () {
             return issue.id == id;
         });
         this.issues[index].status = status;
-        var group_index = this.scrums_bydate.findIndex(function (scrum) {
-            return scrum.scrums.find(function (scrum) {
-                return scrum.issue_logs.find(function (issue) {
-                    return issue.id == id;
-                });
-            });
-        });
-        var scrum_index = this.scrums_bydate[group_index].scrums.findIndex(function (scrum) {
+        var scrum_index = this.scrums_bydate.findIndex(function (scrum) {
             return scrum.issue_logs.find(function (issue) {
                 return issue.id == id;
             });
         });
-        var issue_index = this.scrums_bydate[group_index].scrums[scrum_index].issue_logs.findIndex(function (issue) {
+        var issue_index = this.scrums_bydate[scrum_index].issue_logs.findIndex(function (issue) {
             return issue.id == id;
         });
-        this.scrums_bydate[group_index].scrums[scrum_index].issue_logs.splice(issue_index, 1);
+        this.scrums_bydate[scrum_index].issue_logs.splice(issue_index, 1);
     };
     ScrumboardComponent.prototype.updateDeadline = function (id, deadline) {
         if (deadline) {
@@ -765,20 +778,6 @@ var ScrumboardComponent = /** @class */ (function () {
     ScrumboardComponent.prototype.getScrum = function (keyword) {
         this.filtered_scrum = this.searchService.searchScrums(keyword, this.scrums_bydate);
     };
-    // hasIssues(scrum){
-    //   var pending = scrum.issue_logs.filter(issue =>{
-    //                      return issue.status == 'Pending'
-    //                 })
-    //   var resolved = scrum.issue_logs.filter(issue =>{
-    //                      return issue.status == 'Resolved'
-    //                 })
-    //   var closed = scrum.issue_logs.filter(issue =>{
-    //                      return issue.status == 'Closed'
-    //                 })
-    //   return (this.filter_pending && pending.length!=0) ||
-    //           (this.filter_resolved && resolved.length!=0) ||
-    //           (this.filter_closed && closed.length!=0)
-    // }
     ScrumboardComponent.prototype.hasPending = function (scrum) {
         var pending = scrum.issue_logs.filter(function (issue) {
             return issue.status == 'P';
@@ -808,75 +807,6 @@ var ScrumboardComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/forms/create-team/create-team.component.css":
-/*!************************************************************************!*\
-  !*** ./src/app/components/forms/create-team/create-team.component.css ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/components/forms/create-team/create-team.component.html":
-/*!*************************************************************************!*\
-  !*** ./src/app/components/forms/create-team/create-team.component.html ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<form (ngSubmit)=\"createTeam(createTeamForm)\" #createTeamForm=\"ngForm\">\n    <input type=\"text\" name=\"name\" ngModel>\n    <button type=\"submit\">create</button>\n</form>\n"
-
-/***/ }),
-
-/***/ "./src/app/components/forms/create-team/create-team.component.ts":
-/*!***********************************************************************!*\
-  !*** ./src/app/components/forms/create-team/create-team.component.ts ***!
-  \***********************************************************************/
-/*! exports provided: CreateTeamComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CreateTeamComponent", function() { return CreateTeamComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _services_api_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../services/api.service */ "./src/app/services/api.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var CreateTeamComponent = /** @class */ (function () {
-    function CreateTeamComponent(apiService) {
-        this.apiService = apiService;
-    }
-    CreateTeamComponent.prototype.ngOnInit = function () {
-    };
-    CreateTeamComponent.prototype.createTeam = function (createTeamForm) {
-        this.apiService.create('accounts', createTeamForm.value);
-    };
-    CreateTeamComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-create-team',
-            template: __webpack_require__(/*! ./create-team.component.html */ "./src/app/components/forms/create-team/create-team.component.html"),
-            styles: [__webpack_require__(/*! ./create-team.component.css */ "./src/app/components/forms/create-team/create-team.component.css")]
-        }),
-        __metadata("design:paramtypes", [_services_api_service__WEBPACK_IMPORTED_MODULE_1__["ApiService"]])
-    ], CreateTeamComponent);
-    return CreateTeamComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/components/forms/login/login.component.html":
 /*!*************************************************************!*\
   !*** ./src/app/components/forms/login/login.component.html ***!
@@ -884,7 +814,7 @@ var CreateTeamComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex justify-content-center align-items-center login_container flex-column\">\n    <h1 class=\"pb-4\">LOGIN TO SCRUMBOARD</h1>\n    <p *ngIf=\"invalid_message\">{{invalid_message}}</p>\n    <form class=\"d-flex flex-column justify-content-center\">\n        <div class=\"form-group login_form\">\n            <label>Username</label>\n            <input type=\"text\" class=\"form-control\" placeholder=\"Username\" #username>\n        </div>\n        <div class=\"form-group login_form\">\n            <label for=\"exampleInputPassword1\">Password</label>\n            <input type=\"password\" class=\"form-control\" placeholder=\"Password\" #password>\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary mt-4\" (click)=\"login(username,password)\">Login</button>\n    </form>\n</div>"
+module.exports = "<div class=\"d-flex justify-content-center align-items-center login_container flex-column\">\n    <h1 class=\"pb-4\">LOGIN TO SCRUMBOARD</h1>\n    <p *ngIf=\"invalid_message\" class=\"invalid_message\">{{invalid_message}}</p>\n    <form class=\"d-flex flex-column justify-content-center\">\n        <div class=\"form-group login_form\">\n            <label>Username</label>\n            <input (keypress)=\"invalid_message=''\" type=\"text\" class=\"form-control\" placeholder=\"Username\" #username>\n        </div>\n        <div class=\"form-group login_form\">\n            <label for=\"exampleInputPassword1\">Password</label>\n            <input (keypress)=\"invalid_message=''\" type=\"password\" class=\"form-control\" placeholder=\"Password\" #password>\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary mt-4\" (click)=\"login(username,password)\">Login</button>\n    </form>\n</div>"
 
 /***/ }),
 
@@ -895,7 +825,7 @@ module.exports = "<div class=\"d-flex justify-content-center align-items-center 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".login_container {\n  height: 500px; }\n\n.login_form {\n  width: 400px; }\n"
+module.exports = ""
 
 /***/ }),
 
@@ -1041,7 +971,7 @@ module.exports = "<div class=\"marker\" [style.background-color]= \"getColor(pro
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".marker {\n  width: 7px;\n  height: 86px;\n  margin-right: 20; }\n"
+module.exports = ""
 
 /***/ }),
 
@@ -1099,128 +1029,17 @@ var MarkerComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/prompts/join-team/join-team.component.css":
-/*!**********************************************************************!*\
-  !*** ./src/app/components/prompts/join-team/join-team.component.css ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/components/prompts/join-team/join-team.component.html":
-/*!***********************************************************************!*\
-  !*** ./src/app/components/prompts/join-team/join-team.component.html ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  join-team works!\n</p>\n"
-
-/***/ }),
-
-/***/ "./src/app/components/prompts/join-team/join-team.component.ts":
-/*!*********************************************************************!*\
-  !*** ./src/app/components/prompts/join-team/join-team.component.ts ***!
-  \*********************************************************************/
-/*! exports provided: JoinTeamComponent */
+/***/ "./src/app/constants/config.ts":
+/*!*************************************!*\
+  !*** ./src/app/constants/config.ts ***!
+  \*************************************/
+/*! exports provided: TEAM_ID */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JoinTeamComponent", function() { return JoinTeamComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var JoinTeamComponent = /** @class */ (function () {
-    function JoinTeamComponent() {
-    }
-    JoinTeamComponent.prototype.ngOnInit = function () {
-    };
-    JoinTeamComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-join-team',
-            template: __webpack_require__(/*! ./join-team.component.html */ "./src/app/components/prompts/join-team/join-team.component.html"),
-            styles: [__webpack_require__(/*! ./join-team.component.css */ "./src/app/components/prompts/join-team/join-team.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], JoinTeamComponent);
-    return JoinTeamComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/prompts/slack-login/slack-login.component.css":
-/*!**************************************************************************!*\
-  !*** ./src/app/components/prompts/slack-login/slack-login.component.css ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/components/prompts/slack-login/slack-login.component.html":
-/*!***************************************************************************!*\
-  !*** ./src/app/components/prompts/slack-login/slack-login.component.html ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<a href=\"https://slack.com/oauth/authorize?scope=identity.basic&client_id=398793025732.401722165671\">\n    ADD TO SLACK\n</a>\n"
-
-/***/ }),
-
-/***/ "./src/app/components/prompts/slack-login/slack-login.component.ts":
-/*!*************************************************************************!*\
-  !*** ./src/app/components/prompts/slack-login/slack-login.component.ts ***!
-  \*************************************************************************/
-/*! exports provided: SlackLoginComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlackLoginComponent", function() { return SlackLoginComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var SlackLoginComponent = /** @class */ (function () {
-    function SlackLoginComponent() {
-    }
-    SlackLoginComponent.prototype.ngOnInit = function () {
-    };
-    SlackLoginComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-slack-login',
-            template: __webpack_require__(/*! ./slack-login.component.html */ "./src/app/components/prompts/slack-login/slack-login.component.html"),
-            styles: [__webpack_require__(/*! ./slack-login.component.css */ "./src/app/components/prompts/slack-login/slack-login.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], SlackLoginComponent);
-    return SlackLoginComponent;
-}());
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TEAM_ID", function() { return TEAM_ID; });
+var TEAM_ID = 'T0R2RHDB8';
 
 
 /***/ }),
@@ -1241,11 +1060,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UPDATE_ISSUE_STATUS", function() { return UPDATE_ISSUE_STATUS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UPDATE_ISSUE_DEADLINE", function() { return UPDATE_ISSUE_DEADLINE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOGIN_USER", function() { return LOGIN_USER; });
-var team_id = 'TBQPB0RMJ';
+/* harmony import */ var app_constants_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! app/constants/config */ "./src/app/constants/config.ts");
+
 var GET_LOGS = function () { return '/api/scrum/'; };
 var GET_ISSUES = function () { return '/api/scrum/issues/'; };
-var GET_TEAM_MEMBERS = function () { return '/api/accounts/users/' + team_id + '/'; };
-var GET_TEAM_PROJECTS = function () { return '/api/accounts/projects/' + team_id + '/'; };
+var GET_TEAM_MEMBERS = function () { return '/api/accounts/users/' + app_constants_config__WEBPACK_IMPORTED_MODULE_0__["TEAM_ID"] + '/'; };
+var GET_TEAM_PROJECTS = function () { return '/api/accounts/projects/' + app_constants_config__WEBPACK_IMPORTED_MODULE_0__["TEAM_ID"] + '/'; };
 var UPDATE_ISSUE_STATUS = function (id) { return '/api/scrum/update_status/' + id; };
 var UPDATE_ISSUE_DEADLINE = function (id) { return '/api/scrum/update_deadline/' + id; };
 var LOGIN_USER = function () { return '/api/accounts/login/'; };
@@ -1253,16 +1073,16 @@ var LOGIN_USER = function () { return '/api/accounts/login/'; };
 
 /***/ }),
 
-/***/ "./src/app/pipes/groupby-date.pipe.ts":
+/***/ "./src/app/pipes/group-issues.pipe.ts":
 /*!********************************************!*\
-  !*** ./src/app/pipes/groupby-date.pipe.ts ***!
+  !*** ./src/app/pipes/group-issues.pipe.ts ***!
   \********************************************/
-/*! exports provided: GroupbyDatePipe */
+/*! exports provided: GroupIssuesPipe */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GroupbyDatePipe", function() { return GroupbyDatePipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GroupIssuesPipe", function() { return GroupIssuesPipe; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1271,84 +1091,81 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-var GroupbyDatePipe = /** @class */ (function () {
-    function GroupbyDatePipe() {
+var GroupIssuesPipe = /** @class */ (function () {
+    function GroupIssuesPipe() {
     }
-    GroupbyDatePipe.prototype.transform = function (array, property) {
-        if (!array) {
+    GroupIssuesPipe.prototype.transform = function (issues, date) {
+        if (!issues) {
             return null;
         }
+        var grouped_issues = issues.reduce(function (previous, current) {
+            var date_index = new Date(current['scrum_data'][date]).toLocaleDateString();
+            if (!previous[date_index]) {
+                previous[date_index] = [current];
+            }
+            else {
+                previous[date_index].push(current);
+            }
+            return previous;
+        }, {});
+        console.log(Object.keys(grouped_issues).map(function (date) { return ({ date: date, issues: grouped_issues[date] }); }));
+        return Object.keys(grouped_issues).map(function (date) { return ({ date: date, issues: grouped_issues[date] }); });
     };
-    GroupbyDatePipe = __decorate([
+    GroupIssuesPipe = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"])({
-            name: 'groupbyDate'
+            name: 'groupIssues'
         })
-    ], GroupbyDatePipe);
-    return GroupbyDatePipe;
+    ], GroupIssuesPipe);
+    return GroupIssuesPipe;
 }());
 
 
 
 /***/ }),
 
-/***/ "./src/app/services/api.service.ts":
-/*!*****************************************!*\
-  !*** ./src/app/services/api.service.ts ***!
-  \*****************************************/
-/*! exports provided: ApiService */
+/***/ "./src/app/pipes/group-scrums.pipe.ts":
+/*!********************************************!*\
+  !*** ./src/app/pipes/group-scrums.pipe.ts ***!
+  \********************************************/
+/*! exports provided: GroupScrumsPipe */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApiService", function() { return ApiService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GroupScrumsPipe", function() { return GroupScrumsPipe; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _uirouter_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @uirouter/angular */ "./node_modules/@uirouter/angular/lib/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
-
-
-// import { API_CREATE } from '../constants/endpoints';
-var ApiService = /** @class */ (function () {
-    function ApiService(http, stateService) {
-        this.http = http;
-        this.stateService = stateService;
-        this.users = {};
+var GroupScrumsPipe = /** @class */ (function () {
+    function GroupScrumsPipe() {
     }
-    ApiService.prototype.set_list = function (endpoint) {
-        var _this = this;
-        this.http.get(endpoint)
-            .subscribe(function (data) {
-            _this.users = data;
-        });
+    GroupScrumsPipe.prototype.transform = function (scrum, date) {
+        if (!scrum) {
+            return null;
+        }
+        var grouped_scrums = scrum.reduce(function (previous, current) {
+            var date_index = new Date(current[date]).toLocaleDateString();
+            if (!previous[date_index]) {
+                previous[date_index] = [current];
+            }
+            else {
+                previous[date_index].push(current);
+            }
+            return previous;
+        }, {});
+        return Object.keys(grouped_scrums).map(function (date) { return ({ date: date, scrums: grouped_scrums[date] }); });
     };
-    ApiService.prototype.get_list = function () {
-        return this.users;
-    };
-    ApiService.prototype.create = function (api_name, data) {
-        // var request = this.http.post(API_CREATE(api_name),data)
-        // this.http.post(API_CREATE(api_name), data)
-        // .subscribe(
-        //     data => console.log(data),
-        //     error => this.stateService.go('join-team')
-        // );
-    };
-    ApiService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
-            providedIn: 'root'
-        }),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"],
-            _uirouter_angular__WEBPACK_IMPORTED_MODULE_2__["StateService"]])
-    ], ApiService);
-    return ApiService;
+    GroupScrumsPipe = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"])({
+            name: 'groupScrums'
+        })
+    ], GroupScrumsPipe);
+    return GroupScrumsPipe;
 }());
 
 
@@ -1394,6 +1211,7 @@ var AuthenticationService = /** @class */ (function () {
         if (!localStorage.getItem('user')) {
             this.stateService.go('login');
         }
+        return localStorage.getItem('user');
     };
     AuthenticationService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1668,13 +1486,9 @@ var SearchService = /** @class */ (function () {
     };
     SearchService.prototype.searchIssues = function (keyword, issues) {
         return issues.filter(function (issue) {
-            var scrums = issue.scrum_data.filter(function (scrum) {
-                return scrum.user_username.search(new RegExp(keyword, 'i')) >= 0 ||
-                    scrum.project_name.search(new RegExp(keyword, 'i')) >= 0;
-            });
-            return issue.status.search(new RegExp(keyword, 'i')) >= 0 ||
-                issue.issue.search(new RegExp(keyword, 'i')) >= 0 ||
-                scrums.length != 0;
+            return issue.scrum_data.user_username.search(new RegExp(keyword, 'i')) >= 0 ||
+                issue.scrum_data.project_name.search(new RegExp(keyword, 'i')) >= 0 ||
+                issue.issue.search(new RegExp(keyword, 'i')) >= 0;
         });
     };
     SearchService = __decorate([
