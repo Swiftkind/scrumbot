@@ -48,12 +48,18 @@ class ScrumAPI(ViewSet, CRUDMixin, ParseMixin):
             slack_json = slack_data.json()
             data['channel_name'] = slack_json['group']['name_normalized']
 
+        profile_url = '	https://slack.com/api/users.profile.get?token='
+        profile_params = settings.SLACK_API_TOKEN+'&user='+data['user_id']
+        profile_data = requests.get(profile_url+profile_params)
+        profile_json = profile_data.json()
+        data['full_name'] = profile_json['profile']['real_name']
         try:
             user = User.objects.get(slack_id=data['user_id'])
         except User.DoesNotExist:
             user_data = QueryDict('', mutable=True)
             user_data['username'] = data['user_name']
             user_data['slack_id'] = data['user_id']
+            user_data['first_name'] = data['full_name']
             user = self.create(user_data, User, UserSerializer)
 
         try:
