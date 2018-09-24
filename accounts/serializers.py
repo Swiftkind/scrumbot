@@ -14,7 +14,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ['username', 'slack_id']
+        fields = ['username', 'slack_id', 'first_name',]
 
 
 class LoginSerializer(serializers.Serializer):

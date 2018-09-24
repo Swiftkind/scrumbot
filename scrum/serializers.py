@@ -6,6 +6,7 @@ class ScrumSerializer(serializers.ModelSerializer):
     """Serializer of a scrum model"""
     user_username = serializers.SerializerMethodField()
     project_name = serializers.SerializerMethodField()
+    user_first_name = serializers.SerializerMethodField()    
 
     def get_user_username(self, obj):
         return obj.user.username
@@ -13,10 +14,13 @@ class ScrumSerializer(serializers.ModelSerializer):
     def get_project_name(self, obj):
         return obj.project.name
 
+    def get_user_first_name(self, obj):
+        return obj.user.first_name
+
     class Meta:
         model = Scrum
         fields = ('user', 'project', 'hours',
-                'date_created', 'user_username',
+                'date_created', 'user_username', 'user_first_name',
                 'project_name', 'is_edited', 'humanize_time')
 
 class LogSerializer(serializers.ModelSerializer):

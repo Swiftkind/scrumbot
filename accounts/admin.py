@@ -29,7 +29,7 @@ class UserCreationForm(forms.ModelForm):
 class UserAdmin(BaseUserAdmin):
     add_form = UserCreationForm
     fieldsets = (
-        (None, {'fields': ('username', 'password', 'slack_id',
+        (None, {'fields': ('username', 'first_name', 'password', 'slack_id',
             'is_staff', 'is_superuser', 'is_active')}),
     )
     add_fieldsets = (
