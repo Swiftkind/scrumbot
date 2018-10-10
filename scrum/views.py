@@ -75,6 +75,15 @@ class ScrumAPI(ViewSet, CRUDMixin, ParseMixin, TimeMixin):
             if(not scrum_data['minutes']):
                 return Response(data="HOURS log is required")
             1 / float(scrum_data['minutes'].strip())
+            scrum_data['minutes'] = scrum_data['minutes'].split('.')
+            splitted_hours = int(scrum_data['minutes'][0])
+            splitted_minutes = int(scrum_data['minutes'][1])
+
+            if not splitted_minutes >= 60:
+                scrum_data['minutes'] = '.'.join([str(splitted_hours), str(splitted_minutes)])
+                
+            else:
+                return Response(data="Invalid input format on HOURS log")
         except:
             return Response(data="Invalid input format on HOURS log")
 
@@ -141,6 +150,15 @@ class ScrumAPI(ViewSet, CRUDMixin, ParseMixin, TimeMixin):
             if(not hours):
                 return Response(data="HOURS log is required")
             1 / float(hours.strip())
+            hours = hours.split('.')
+            splitted_hours = int(hours[0])
+            splitted_minutes = int(hours[1])
+
+            if not splitted_minutes >= 60:
+                hours = '.'.join([str(splitted_hours), str(splitted_minutes)])
+                
+            else:
+                return Response(data="Invalid input format on HOURS log")
         except:
             return Response(data="Invalid input format on HOURS log")
         # Convert the user input to minutes
