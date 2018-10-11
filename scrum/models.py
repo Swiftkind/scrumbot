@@ -13,6 +13,7 @@ class Scrum(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
     hours = models.FloatField()
+    minutes = models.IntegerField()
     is_edited = models.BooleanField(default=False)
 
     def __str__(self):
@@ -22,7 +23,19 @@ class Scrum(models.Model):
     def humanize_time(self):
         return naturalday(self.date_created)
     
+    @property
+    def hours(self):
+        # Gets the hours to display
+        over_minutes = self.minutes % 60
+        hours = int((self.minutes-over_minutes) / 60)
 
+        if len(str(over_minutes)) == 1:
+            # add padding if it's a  single digit
+            over_minutes = "0" + str(over_minutes)
+
+        # Covnert to float so there won't be any conflict on the front end
+        float_time = float(f"{hours}.{over_minutes}")
+        return float_time
 
 
 class Log(models.Model):
