@@ -40,6 +40,10 @@ export class NavigationComponent implements OnInit {
     this.stateService.go('issuesboard');
   }
 
+  goToTimesheets(){
+    this.stateService.go('timesheets');
+  }
+
   searchSetter(keyword){
     this.searchEvent.emit(keyword);
   }

@@ -12,7 +12,7 @@ from django.conf import settings
 
 from .models import Log, Issue, Scrum
 
-from scrumbot.mixins import CRUDMixin, ParseMixin, TimeMixin
+from scrumbot.mixins import CRUDMixin, ParseMixin, TimeMixin, SlackMixin
 
 
 from rest_framework.response import Response
@@ -30,7 +30,7 @@ from .serializers import (
                         )
 
 
-class ScrumAPI(ViewSet, CRUDMixin, ParseMixin, TimeMixin):
+class ScrumAPI(ViewSet, SlackMixin,  CRUDMixin, ParseMixin, TimeMixin):
     """
     Scrum API
     """
@@ -42,12 +42,9 @@ class ScrumAPI(ViewSet, CRUDMixin, ParseMixin, TimeMixin):
         data = self.parseData(request.POST)
 
         if(data['channel_name']=='privategroup'):
-            slack_url = 'https://slack.com/api/groups.info?token='
             slack_params = settings.SLACK_API_TOKEN+'&channel='+data['channel_id']
-            slack_data = requests.get(slack_url+slack_params)
-            slack_json = slack_data.json()
-            data['channel_name'] = slack_json['group']['name_normalized']
-
+            slack_data = self.get_slack_method('https://slack.com/api/groups.info?token=', slack_params)
+            data['channel_name'] = slack_data['group']['name_normalized']
         try:
             user = User.objects.get(slack_id=data['user_id'])
         except User.DoesNotExist:

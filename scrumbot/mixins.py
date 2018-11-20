@@ -1,7 +1,22 @@
+import json
+import requests
+
 from rest_framework.response import Response
 from django.http import QueryDict
 from django.conf import settings
-import json
+
+class SlackMixin(object):
+    """ Slack API method calls
+    """
+
+    def get_slack_method(self, api_url, params):
+        slack_data = requests.get(api_url+params)
+        return slack_data.json()
+
+    def send_message(self, msg, *args, **kwargs):
+        api_params = settings.SLACK_API_TOKEN+'&channel=CE7QX1EKH'+'&text='+msg
+        self.get_slack_method(settings.SLACK_API_SEND_CHAT, api_params)
+
 
 class CRUDMixin(object):
     """
@@ -40,6 +55,7 @@ class CRUDMixin(object):
             serializer.update(model_id)
             return Response(serializer.data,status=200)
         return Response(status=400)
+
 
 
 class ParseMixin(object):
