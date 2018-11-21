@@ -4,6 +4,7 @@ from django.views.generic.base import TemplateView
 
 urlpatterns = [
     path('api/scrum/', include('scrum.urls')),
+    path('api/timesheet/', include('timesheet.urls')),
     path('api/accounts/', include('accounts.urls')),
     path('admin/', admin.site.urls),
     path('api/reports/', include('reports.urls'))

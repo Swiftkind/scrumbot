@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z09$8lrum!s6pg^@ek^m_)oh2a%2%@*24(#4gmbi7o1lzj3ow^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ()
+ALLOWED_HOSTS = ('*')
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'scrum',
     'accounts',
     'corsheaders',
+    'timesheet'
 ]
 
 MIDDLEWARE = [
@@ -167,6 +168,14 @@ LOG_TYPES = {
 }
 
 SLACK_API_TOKEN = ""
+TIME_IN = 9
+SLACK_API_USERS_INFO = 'https://slack.com/api/users.info?token='
+SLACK_API_SEND_CHAT = 'https://slack.com/api/chat.postMessage?token='
+SLACK_BOT_MESSAGE = {
+    'error': "I'm sorry, I don't understand! Sometimes I have an easier time with a few simple keywords.",
+    'punchin': "You've punched in. To punch out type `out`. Type `timesheet` to view your timesheet for the day.",
+    'punchout': "You've punched out. Type `timesheet` to view your timesheet for the day."
+}
 
 # Allow any settings to be defined in local_settings.py which should be
 # ignored in your version control system allowing for settings to be
@@ -176,3 +185,5 @@ try:
 except ImportError as e:
     if "local_settings" not in str(e):
         raise e
+
+

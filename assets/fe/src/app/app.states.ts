@@ -3,6 +3,7 @@ import { ScrumboardComponent } from 'app/components/containers/scrumboard/scrumb
 import { IssueboardComponent } from 'app/components/containers/issueboard/issueboard.component'
 import { LoginComponent } from 'app/components/forms/login/login.component'
 import { AuthenticationService } from 'app/services/authentication.service';
+import { TimesheetsComponent } from 'app/components/timesheets/timesheets.component';
 
 let HOME_STATE: Object[] = [
     {
@@ -10,7 +11,7 @@ let HOME_STATE: Object[] = [
         url: '/',
         views: ContentOnly(ScrumboardComponent),
     }
-]
+];
 
 let ISSUES_STATE: Object[] = [
     {
@@ -18,7 +19,15 @@ let ISSUES_STATE: Object[] = [
         url: '/issues',
         views: ContentOnly(IssueboardComponent),
     }
-]
+];
+
+let TIMESHEET_STATE: Object[] = [
+    {
+        name: 'timesheets',
+        url: '/timesheets',
+        views: ContentOnly(TimesheetsComponent),
+    }
+];
 
 let LOGIN_STATE: Object[] = [
     {
@@ -26,7 +35,7 @@ let LOGIN_STATE: Object[] = [
         url: '/login',
         views: ContentOnly(LoginComponent),
     }
-]
+];
 
 
 let LOGOUT_STATE: Object[] = [
@@ -40,7 +49,7 @@ let LOGOUT_STATE: Object[] = [
             return trans.router.stateService.target('login');
         }
     }
-]
+];
 
 
 export const APP_STATES = {
@@ -48,6 +57,7 @@ export const APP_STATES = {
         HOME_STATE,
         ISSUES_STATE,
         LOGIN_STATE,
-        LOGOUT_STATE
+        LOGOUT_STATE,
+        TIMESHEET_STATE
 	)
 }
