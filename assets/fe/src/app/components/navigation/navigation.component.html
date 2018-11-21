@@ -4,9 +4,12 @@
             <div class="tabs clickable col-1 pt-3">
                  <p (click)="goToDashboard()" class="navigation-text w-100">Dashboard</p>
             </div>
-            <div class="tabs clickable col-2 pt-3">
+            <div class="tabs clickable col-1 pt-3 pl-0 pr-0 mr-0">
                  <p (click)="goToIssues()" class="fix-align navigation-text w-100">All Issues</p>
             </div>
+            <div class="tabs clickable col-2 pt-3">
+                <p (click)="goToTimesheets()" class="fix-align navigation-text">Timesheets</p>
+           </div>
             <div class="pl-0">
                 <fa-icon [icon]="icons.search" class="pr-2 color-custom-gray"></fa-icon>
                 <input type="text" placeholder="Search" class="border-0 less-emphasis searchbar" (input)="searchSetter(search.value)" #search>
@@ -22,4 +25,3 @@
         <a (click)="logOut()" class="dropdown-item">Logout</a>
     </div>
 </sat-popover>
-

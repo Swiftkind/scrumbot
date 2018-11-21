@@ -30,6 +30,7 @@ import { GroupScrumsPipe } from './pipes/group-scrums.pipe';
 import { GroupIssuesPipe } from './pipes/group-issues.pipe';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { TokenService } from './services/interceptors/token-service.service';
+import { TimesheetsComponent } from './components/timesheets/timesheets.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { TokenService } from './services/interceptors/token-service.service';
     GroupScrumsPipe,
     GroupIssuesPipe,
     NavigationComponent,
+    TimesheetsComponent,
   ],
   imports: [
     NgbModule.forRoot(),

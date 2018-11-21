@@ -11,5 +11,4 @@ media/
 dist/
 assets/fe/node_modules/
 assets/fe/dist/
-
-
+env/

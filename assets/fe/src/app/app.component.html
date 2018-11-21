@@ -1,1 +1,4 @@
-<ui-view name="content"></ui-view>
+<div class="container-fluid">
+    <app-navigation [current_page]="current_page" (searchEvent)="searchSetter($event)"></app-navigation>
+    <ui-view name="content"></ui-view>
+</div>
