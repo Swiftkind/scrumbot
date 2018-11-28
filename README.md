@@ -57,6 +57,12 @@ Run unittest:
 
 DEVELOPMENT:
 
+Setting up slack workspace for testing:
+
+1. Create your testing workspace here https://slack.com/
+2. While logged in create your scrumbot app here https://api.slack.com/apps
+
+
 Creating your ngrok tunnel for testing your slack app:
 
 1. Download and install ngrok here https://ngrok.com/download
@@ -67,11 +73,14 @@ e.g. http://9b39ffec.ngrok.io
 
 Setting up slack slash commands:
 
+Inside your scrumbot app navigate to the slash commands menu and create your slash commands as shown below:
+
 Command for creating scrum reports
 https://<domain_name>/api/scrum/
 
 Command for updating scrum reports
 https://<domain_name>/api/scrum/update/
+
 
 Setup bot to gain access to private channels:
 
@@ -81,6 +90,7 @@ https://api.slack.com/custom-integrations/legacy-tokens
 
 Setup local_settings.py:
 
+```
 DEBUG = True
 
 ALLOWED_HOSTS = ('*')
@@ -94,3 +104,4 @@ DATABASES = {
 }
 
 SLACK_API_TOKEN = <your workspace app's token>
+```
