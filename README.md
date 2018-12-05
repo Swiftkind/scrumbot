@@ -55,7 +55,47 @@ Run unittest:
 ./manage.py test
 ```
 
+
+Install angular modules:
+```
+make webapp-install
+```
+
+
+Build angular:
+```
+make webapp-watch
+```
+
+
+Install ruby
+```
+sudo apt install ruby-full
+```
+Once it is installed, you can verify the installed version by executing the following command
+```
+ruby --version
+```
+
+
+Install sass and compass
+```
+sudo gem install compass
+```
+
+
+Run compass:
+```
+compass watch
+```
+
 DEVELOPMENT:
+
+Setting up slack workspace for testing:
+
+1. Create your testing workspace here https://slack.com/
+2. While logged in create your scrumbot app here https://api.slack.com/apps
+
 
 Creating your ngrok tunnel for testing your slack app:
 
@@ -67,11 +107,14 @@ e.g. http://9b39ffec.ngrok.io
 
 Setting up slack slash commands:
 
+Inside your scrumbot app navigate to the slash commands menu and create your slash commands as shown below:
+
 Command for creating scrum reports
 https://<domain_name>/api/scrum/
 
 Command for updating scrum reports
 https://<domain_name>/api/scrum/update/
+
 
 Setup bot to gain access to private channels:
 
@@ -81,6 +124,7 @@ https://api.slack.com/custom-integrations/legacy-tokens
 
 Setup local_settings.py:
 
+```
 DEBUG = True
 
 ALLOWED_HOSTS = ('*')
@@ -94,3 +138,4 @@ DATABASES = {
 }
 
 SLACK_API_TOKEN = <your workspace app's token>
+```
