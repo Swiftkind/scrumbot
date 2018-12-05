@@ -13,3 +13,6 @@ assets/fe/node_modules/
 assets/fe/dist/
 
 
+env/
+venv/
+assets/fe/src/assets/.sass-cache/

@@ -55,6 +55,40 @@ Run unittest:
 ./manage.py test
 ```
 
+
+Install angular modules:
+```
+make webapp-install
+```
+
+
+Build angular:
+```
+make webapp-watch
+```
+
+
+Install ruby
+```
+sudo apt install ruby-full
+```
+Once it is installed, you can verify the installed version by executing the following command
+```
+ruby --version
+```
+
+
+Install sass and compass
+```
+sudo gem install compass
+```
+
+
+Run compass:
+```
+compass watch
+```
+
 DEVELOPMENT:
 
 Setting up slack workspace for testing:
