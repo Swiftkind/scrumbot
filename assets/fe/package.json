@@ -34,7 +34,7 @@
     "ng2-material-dropdown": "^0.10.0",
     "ngx-bootstrap": "^3.0.1",
     "ngx-mydatepicker": "^2.4.7",
-    "node-sass": "^4.9.2",
+    "node-sass": "^7.0.0",
     "rxjs": "^6.0.0",
     "sass": "^1.10.0",
     "string-to-color": "^2.0.0",
